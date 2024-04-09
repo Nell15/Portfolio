@@ -7,7 +7,7 @@
 </nav>
 
 <main>
-    <slot />s
+    <slot />
 </main>
 
 <style>

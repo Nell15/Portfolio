@@ -1,6 +1,5 @@
 <script>
     import pfp from '../assets/pfp.png'
-    import Test from './skills/tests.svelte'
 </script>
 
 <h1>Hi! <span style="color:blueviolet">I'm Nell Truong</span></h1>
@@ -17,7 +16,7 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <Test />
+    <p>Learn about my projects</p>
 </section>
 
 <style>
