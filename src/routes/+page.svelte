@@ -10,6 +10,7 @@
         <p>I'm a 19 years old engineering student at N7 (ENSEEIHT)
             specializing in Computer Science. I'm interested in software
             development, artificial intelligence and cybersecurity.</p>
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src={pfp} alt="profile picture" class="pfp"/>
     </div>
 </section>
