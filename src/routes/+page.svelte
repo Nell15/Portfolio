@@ -1,5 +1,6 @@
 <script>
-    import pfp from '../assets/pfp.png'
+    import pfp from '$assets/img/pfp.png'
+    import HomeText from '$assets/homeText.svelte'
 </script>
 
 <h1>Hi! <span style="color:blueviolet">I'm Nell Truong</span></h1>
@@ -7,9 +8,7 @@
 
 <section>
     <div class ="abt">
-        <p>I'm a 19 years old engineering student at N7 (ENSEEIHT)
-            specializing in Computer Science. I'm interested in software
-            development, artificial intelligence and cybersecurity.</p>
+        <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src={pfp} alt="profile picture" class="pfp"/>
     </div>
@@ -23,6 +22,7 @@
 <style>
     :global(html) {
         scroll-behavior: smooth;
+        font-family: "HK Grostesk", sans-serif;
     }
 
     .pfp {

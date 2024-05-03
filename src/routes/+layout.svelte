@@ -3,6 +3,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/#projects">Projects</a></li>
         <li><a href="/skills">Skills</a></li>
+        <li><a href="/experience">Experience</a></li>
     </ul>
 </nav>
 
@@ -20,6 +21,7 @@
     }
 
     .nav__links li a {
+        font-family: "HK Grostesk", sans-serif;
         color: #000000;
         transition: all 0.3 ease 0s;
     }
