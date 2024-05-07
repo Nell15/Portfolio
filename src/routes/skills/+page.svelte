@@ -1,24 +1,15 @@
 <script>
-    // TODO: faire de ça un composant
-    import python from '$assets/langages/Python.png'
-    import java from '$assets/langages/Java.png'
-    import hmtl from '$assets/langages/hmtl.png'
-    import css from '$assets/langages/css.png'
-
-    const lang = [
-        {name:'Java', file: java},
-        {name: 'Python', file: python},
-        {name: 'HTML', file: hmtl},
-        {name: 'CSS', file: css}
-    ];
+    import langs from '$assets/langages/langs.json'
+    let path = 'src/assets/langages/'
 </script>
+
 
 <p>Here are technologies I am familiar with :</p>
 
 <div class='lang_container'>
-    {#each lang as l}
+    {#each langs as l}
         <div class='lang'>
-            <img src={l.file} alt={l.name} class='lang_img'>
+            <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
             <p style="text-align:center">{l.name}</p>
         </div>
     {/each}
