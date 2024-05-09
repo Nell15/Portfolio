@@ -12,6 +12,10 @@
 </main>
 
 <style>
+    :global(html) {
+        font-family: "HK Grostesk", sans-serif;
+    }
+
     .nav__links {
         list-style: none;
     }

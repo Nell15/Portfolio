@@ -1,6 +1,6 @@
 [
-    {"name":"Python", "file":"Python.png"},
-    {"name":"Java", "file":"Java.png"},
-    {"name":"HTML", "file":"html.png"},
-    {"name":"CSS", "file":"css.png"}
+    {"name":"Python", "file":"Python.png", "use":"all back"},
+    {"name":"Java", "file":"Java.png", "use":"all back"},
+    {"name":"HTML", "file":"html.png", "use":"all web"},
+    {"name":"CSS", "file":"css.png", "use":"all web"}
 ]

@@ -1,6 +1,6 @@
 <script>
     import pfp from '$assets/img/pfp.png'
-    import HomeText from '$assets/homeText.svelte'
+    import HomeText from '$assets/components/homeText.svelte'
 </script>
 
 <h1>Hi! <span style="color:blueviolet">I'm Nell Truong</span></h1>
@@ -22,7 +22,6 @@
 <style>
     :global(html) {
         scroll-behavior: smooth;
-        font-family: "HK Grostesk", sans-serif;
     }
 
     .pfp {
