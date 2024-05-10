@@ -1,6 +1,12 @@
 [
-    {"name":"Python", "file":"Python.png", "use":"all back"},
-    {"name":"Java", "file":"Java.png", "use":"all back"},
+    {"name":"Python", "file":"Python.png", "use":"all soft"},
+    {"name":"C", "file":"C.png", "use":"all soft"},
+    {"name":"Java", "file":"Java.png", "use":"all soft"},
+    {"name":"Ada", "file":"Ada.svg", "use":"all soft"},
     {"name":"HTML", "file":"html.png", "use":"all web"},
-    {"name":"CSS", "file":"css.png", "use":"all web"}
+    {"name":"CSS", "file":"css.png", "use":"all web"},
+    {"name":"Svelte", "file":"Svelte.svg", "use":"all web"},
+    {"name":"Arduino", "file":"Arduino.svg", "use":"all"},
+    {"name":"JavaFx", "file":"JavaFX.png", "use":"all"},
+    {"name":"Git", "file":"Git.svg", "use":"all soft web"}
 ]

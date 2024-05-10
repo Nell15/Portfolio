@@ -17,14 +17,14 @@
 	All
 </button>
 <button on:click={() => {
-    use = "back"
+    use = "soft"
     }}>
-	Back
+	Software Development
 </button>
 <button on:click={() => {
     use = "web"
     }}>
-	Web
+	Web Development
 </button>
 
 
@@ -32,9 +32,10 @@
     {#each langs as l}
         {#if l.use.includes(use)}
             <div class='lang'>
-                <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
+                <div class='img'>
+                    <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
+                </div>
                 <p style="text-align:center">{l.name}</p>
-                <p></p>
             </div>
         {/if}
     {/each}
@@ -43,21 +44,25 @@
 <style>
     .lang_container {
         width: 30rem;
-        height: 30rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: start;
         padding-top: 2rem;
     }
 
     .lang {
+        height: 8rem;
         display: flex;
         flex-direction: column;
+        padding: 0px 1em
     }
 
     .lang_img {
         height: 4rem;
         width: 4rem;
         object-fit: contain;
+    }
+    .img {
+        height: 4rem;
     }
 </style>
