@@ -9,8 +9,8 @@
         science classes. Over the years, I made several projects either alone or in a team.
     </p>
     <p>
-        In september 2023, I enrolled in <a href="https://www.enseeiht.fr/en/index.html">N7 (ENSEEIHT)</a> 
-        after, partaking in the entrance exam in 
+        In september 2023, I enrolled in <a href="https://www.enseeiht.fr/en/index.html" target="_blank">N7 (ENSEEIHT)</a> 
+        after, partaking in the engineering schools entrance exam earlier in May of the same year.
     </p>
 </div>
 

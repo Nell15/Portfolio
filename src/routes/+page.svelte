@@ -3,8 +3,12 @@
     import HomeText from '$assets/components/homeText.svelte'
 </script>
 
-<h1>Hi! <span style="color:blueviolet">I'm Nell Truong</span></h1>
-<p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT).</p>
+
+
+<section class="intro">
+    <h1>Hi! I'm <span style="color:blueviolet">Nell Truong.</span></h1>
+    <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT).</p>
+</section>
 
 <section>
     <div class ="abt">
@@ -23,6 +27,11 @@
     :global(html) {
         scroll-behavior: smooth;
     }
+    
+    .intro h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
 
     .pfp {
         border-radius: 50%;
@@ -36,6 +45,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    @media screen and (max-width: 800px) {
+        .abt {
+            flex-direction: column-reverse;
+        }
     }
 
     .abt img {

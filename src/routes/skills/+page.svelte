@@ -8,38 +8,41 @@
     }
 </script>
 
+<body>
+    <p>Here are technologies I am familiar with :</p>
 
-<p>Here are technologies I am familiar with :</p>
+    <div style="display:flex; flex-direction:center;">
+        <button on:click={() => {
+            use = "all"
+        }}>
+            All
+        </button>
+        <button on:click={() => {
+            use = "soft"
+        }}>
+            Software Development
+        </button>
+        <button on:click={() => {
+            use = "web"
+        }}>
+            Web Development
+        </button>
+    </div>
 
-<button on:click={() => {
-    use = "all"
-    }}>
-	All
-</button>
-<button on:click={() => {
-    use = "soft"
-    }}>
-	Software Development
-</button>
-<button on:click={() => {
-    use = "web"
-    }}>
-	Web Development
-</button>
 
-
-<div class='lang_container'>
-    {#each langs as l}
-        {#if l.use.includes(use)}
-            <div class='lang'>
-                <div class='img'>
-                    <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
+    <div class='lang_container'>
+        {#each langs as l}
+            {#if l.use.includes(use)}
+                <div class='lang'>
+                    <div class='img'>
+                        <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
+                    </div>
+                    <p style="text-align:center">{l.name}</p>
                 </div>
-                <p style="text-align:center">{l.name}</p>
-            </div>
-        {/if}
-    {/each}
-</div>
+            {/if}
+        {/each}
+    </div>
+</body>
 
 <style>
     .lang_container {
@@ -62,6 +65,7 @@
         width: 4rem;
         object-fit: contain;
     }
+
     .img {
         height: 4rem;
     }

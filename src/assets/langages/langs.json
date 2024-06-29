@@ -7,6 +7,6 @@
     {"name":"CSS", "file":"css.png", "use":"all web"},
     {"name":"Svelte", "file":"Svelte.svg", "use":"all web"},
     {"name":"Arduino", "file":"Arduino.svg", "use":"all"},
-    {"name":"JavaFx", "file":"JavaFX.png", "use":"all"},
+    {"name":"JavaFx", "file":"JavaFX.png", "use":"all soft"},
     {"name":"Git", "file":"Git.svg", "use":"all soft web"}
 ]

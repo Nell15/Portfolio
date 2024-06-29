@@ -63,6 +63,6 @@
     }
 
     #CdL_pic {
-        width: 105rem;
+        width: 50rem;
     }
 </style>
