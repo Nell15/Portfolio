@@ -1,17 +1,18 @@
 <script>
     import pfp from '$assets/img/pfp.png'
-    import HomeText from '$assets/components/homeText.svelte'
+    import HomeText from '$assets/components/HomeText.svelte'
+    import AButton from '../assets/components/AButton.svelte';
+    let Violet = "blueviolet";
 </script>
 
-
-
 <section class="intro">
-    <h1>Hi! I'm <span style="color:blueviolet">Nell Truong.</span></h1>
+    <h1>Hi! I'm <span style="color: {Violet}">Nell Truong.</span></h1>
     <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT).</p>
+    <AButton text={"Learn more"} link={"#about"} textColor={Violet} buttonColor={Violet}/>
 </section>
 
 <section>
-    <div class ="abt">
+    <div class="abt" id="about">
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src={pfp} alt="profile picture" class="pfp"/>
