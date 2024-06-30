@@ -6,12 +6,19 @@
 </script>
 
 <section class="intro">
-    <h1>Hi! I'm <span style="color: {Violet}">Nell Truong.</span></h1>
-    <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT).</p>
-    <AButton text={"Learn more"} link={"#about"} textColor={Violet} buttonColor={Violet}/>
+    <div>
+        <h1>Hi, I'm </h1>
+        <h1 style="color: {Violet}">Nell Truong.</h1>
+        <h2>I'm a engineering student.</h2>
+        <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
+            and currently doing an internship as a developer at 
+            <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/">SNCF</a>.</p>
+        <AButton text={"Learn more"} link={"#about"} textColor={Violet} buttonColor={Violet}/>
+    </div>
 </section>
 
-<section>
+<section class="abt_section">
+    <h2>About me</h2>
     <div class="abt" id="about">
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
@@ -24,18 +31,67 @@
     <p>Learn about my projects</p>
 </section>
 
+<section id="contact">
+    <h2>Contact</h2>
+    <p>How to contact me:</p>
+</section>
+
 <style>
     :global(html) {
         scroll-behavior: smooth;
+        background-color: #fafbfe;
     }
-    
+
+    .intro {
+        height: 80vh;
+    }
+
+    .intro div {
+        padding: 12em 20em 0px;
+    }
+
+    @media screen and (max-width: 500px){
+        .intro div {
+            padding: 8em 1em 0px;
+        }
+    }
+
+    @media screen and (max-height: 500px) {
+        .intro div {
+            padding: 1em 1em 0px;
+        }
+    }
+
     .intro h1 {
-        font-size: 4rem;
+        /* font-size: 4rem; */
+        font-size: clamp(40px, 8vw, 80px);
         font-weight: bold;
+        margin: auto;
+    }
+
+    .intro h2 {
+        font-size: clamp(25px, 8vw, 45px);
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .intro p {
+        max-width: 27em;
     }
 
     .pfp {
         border-radius: 50%;
+    }
+
+    .abt_section, #projects, #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt_section h2, #projects h2, #contact h2 {
+        font-size: 40px;
+        text-align: center;
     }
 
     .abt {
@@ -49,12 +105,18 @@
     }
 
     @media screen and (max-width: 800px) {
+        .intro {
+            height: 85vh;
+        }
+
         .abt {
             flex-direction: column-reverse;
+            width: 85%;
         }
-    }
 
-    .abt img {
-        border-radius: 50%;
+        .pfp {
+            width: 8em;
+            height: auto;
+        }
     }
 </style>
