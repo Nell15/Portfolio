@@ -60,7 +60,7 @@ body {
     margin: 0 15px 30px;
     overflow: hidden;
     border-radius: 28px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1)
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
 }
 .ag-courses-item_link {
   display: block;
