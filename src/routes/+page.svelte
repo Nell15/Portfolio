@@ -3,6 +3,7 @@
     import HomeText from '$assets/components/HomeText.svelte'
     import AButton from '../assets/components/AButton.svelte';
     let Violet = "blueviolet";
+    import Card from '../assets/components/Card.svelte';
 </script>
 
 <section class="intro">
@@ -29,6 +30,7 @@
 <section id="projects">
     <h2>Projects</h2>
     <p>Learn about my projects</p>
+    <Card></Card>
 </section>
 
 <section id="contact">
@@ -40,6 +42,12 @@
     :global(html) {
         scroll-behavior: smooth;
         background-color: #fafbfe;
+    }
+
+    :global(a), :global(a:hover), :global(a:visited), :global(a:active) {
+        /* color: inherit; */
+        color: #8a2be2;
+        text-decoration: none;
     }
 
     .intro {
@@ -77,6 +85,10 @@
 
     .intro p {
         max-width: 27em;
+    }
+
+    .intro a {
+        color: #8a2be2;
     }
 
     .pfp {
