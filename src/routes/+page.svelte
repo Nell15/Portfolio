@@ -3,7 +3,7 @@
     import HomeText from '$assets/components/HomeText.svelte'
     import AButton from '../assets/components/AButton.svelte';
     let Violet = "blueviolet";
-    import Card from '../assets/components/Card.svelte';
+    import Cards from '../assets/components/CardsBox.svelte';
 </script>
 
 <section class="intro">
@@ -30,7 +30,7 @@
 <section id="projects">
     <h2>Projects</h2>
     <p>Learn about my projects</p>
-    <Card></Card>
+    <Cards></Cards>
 </section>
 
 <section id="contact">

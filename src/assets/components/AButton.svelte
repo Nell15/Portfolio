@@ -28,13 +28,7 @@
         height: 3em;
         transition: all 0.5s;
         cursor: pointer;
-    /* }
-
-    button{
-        cursor: pointer;
-        display: inline-block; */
         position: relative;
-        /* transition: 0.5s; */
     }
 
     button:after {
