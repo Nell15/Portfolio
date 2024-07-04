@@ -17,16 +17,15 @@
                     />
                 </svg>
             </span>
-        <!-- <p>Langage</p> -->
 
-        <div class="ag-courses-item_title">
+            <div class="ag-courses-item_title">
         Ceci est un test
         </div>
 
         <div class="ag-courses-item_date-box">
             <span class="ag-courses-item_date">
                 Petite description oklm
-                Note : reduire l'interligne titre/desc
+                Réduire interligne ?
             </span>
             <span class="lang">Langage</span>
         </div>
@@ -34,7 +33,6 @@
 </div>
 
 <style>
-
 
 .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
@@ -85,6 +83,8 @@
     transition: color .5s ease;
 }
 .ag-courses-item_date-box {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   color: #FFF;
   /* color: #020409; */
@@ -103,7 +103,7 @@
 .lang {
   font-weight: bold;
     color: #020409;
-    padding-top: 1em;
+    padding-top: 0.5em;
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
     transition: color .5s ease;

@@ -57,6 +57,7 @@
         position: sticky;
         top: 0;
         background-color: #fafbfe;
+        z-index: 3;
     }
 
     .logo {

@@ -18,9 +18,9 @@
     </div>
 </section>
 
-<section class="abt_section">
+<section class="abt_section" id="about">
     <h2>About me</h2>
-    <div class="abt" id="about">
+    <div class="abt" >
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src={pfp} alt="profile picture" class="pfp"/>
@@ -29,7 +29,6 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <p>Learn about my projects</p>
     <Cards></Cards>
 </section>
 
@@ -50,8 +49,14 @@
         text-decoration: none;
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
     .intro {
-        height: 80vh;
+        height: 85vh;
     }
 
     .intro div {
@@ -93,6 +98,10 @@
 
     .pfp {
         border-radius: 50%;
+    }
+
+    .abt_section {
+        padding-top: 3em;
     }
 
     .abt_section, #projects, #contact {
