@@ -1,17 +1,20 @@
 <script>
 	import Card from "./Card.svelte";
+	export let contentFile;
 </script>
 
 <div class="ag-format-container">
     <div class="ag-courses_box">
+		{#each contentFile as proj}
+			<Card title={proj.title} description={proj.description} language={proj.language}></Card>
+		{/each}
+		<!-- <Card></Card>
 		<Card></Card>
 		<Card></Card>
 		<Card></Card>
 		<Card></Card>
 		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
+		<Card></Card> -->
     </div>
 </div>
 

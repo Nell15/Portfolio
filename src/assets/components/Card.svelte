@@ -1,4 +1,11 @@
-<!-- This will be a single card (ongoing refatoring) -->
+<script>
+    export let title;
+    export let icon;
+    export let description;
+    export let language;
+    export let link;
+</script>
+
 
 <div class="ag-courses_item">
     <a href="#" class="ag-courses-item_link">
@@ -18,16 +25,19 @@
                 </svg>
             </span>
 
-            <div class="ag-courses-item_title">
-        Ceci est un test
+        <div class="ag-courses-item_title">
+            {title}
         </div>
 
         <div class="ag-courses-item_date-box">
             <span class="ag-courses-item_date">
-                Petite description oklm
-                Réduire interligne ?
+                {#if description != "none"}
+                    {description}
+                {/if}
             </span>
-            <span class="lang">Langage</span>
+            {#if language != "none"}
+                <span class="lang">{language}</span>
+            {/if}
         </div>
     </a>
 </div>

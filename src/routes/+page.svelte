@@ -4,6 +4,7 @@
     import AButton from '../assets/components/AButton.svelte';
     let Violet = "blueviolet";
     import Cards from '../assets/components/CardsBox.svelte';
+    import projectsDesc from '$assets/components/projectCards.json'
 </script>
 
 <section class="intro">
@@ -29,7 +30,7 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <Cards></Cards>
+    <Cards contentFile={projectsDesc}></Cards>
 </section>
 
 <section id="contact">

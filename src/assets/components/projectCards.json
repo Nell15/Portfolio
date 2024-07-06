@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Portfolio",
+        "description": "This is the website you are currently browsing !",
+        "icon": "none",
+        "language": "Svelte",
+        "link": "none"
+    },
+    {
+        "title": "N7 Studio",
+        "description": "N7 Studio is a music composition software that we developped as a group project for school.",
+        "icon": "none",
+        "language": "Java",
+        "link": "none"
+    },
+    {
+        "title": "TIPE",
+        "description": "I studied traffic light optimization in a python simulation. I tried reducing the waiting time by changing the lights algorithm.",
+        "icon": "none",
+        "language": "Python",
+        "link": "none"
+    }
+]
