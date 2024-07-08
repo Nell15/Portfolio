@@ -6,7 +6,12 @@
 <div class="ag-format-container">
     <div class="ag-courses_box">
 		{#each contentFile as proj}
-			<Card title={proj.title} description={proj.description} language={proj.language}></Card>
+			<Card
+			title={proj.title}
+			description={proj.description}
+			language={proj.language}
+			link={proj.link}>
+			</Card>
 		{/each}
 		<!-- <Card></Card>
 		<Card></Card>
@@ -37,8 +42,7 @@
 		align-items: flex-start;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-
-		padding: 50px 0;
+		padding: 1em 0;
 	}
 
 	@media only screen and (max-width: 767px) {

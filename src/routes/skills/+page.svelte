@@ -3,9 +3,6 @@
     let path = 'src/assets/langages/';
 
     let use = "all";
-    function chg_back(str) {
-		use = str;
-    }
 </script>
 
 <body>

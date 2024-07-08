@@ -103,6 +103,7 @@
 
     .abt_section {
         padding-top: 3em;
+        margin-bottom: 4em;
     }
 
     .abt_section, #projects, #contact {
