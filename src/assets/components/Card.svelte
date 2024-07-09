@@ -12,7 +12,7 @@
 
 
 <div class="ag-courses_item">
-    <a href={link} class="ag-courses-item_link">
+    <a href={link} class="ag-courses-item_link" target="_blank">
         <div class="ag-courses-item_bg"></div>
             <span class="icon">
                 <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>

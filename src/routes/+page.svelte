@@ -1,10 +1,11 @@
 <script>
     import pfp from '$assets/img/pfp.png'
     import HomeText from '$assets/components/HomeText.svelte'
-    import AButton from '../assets/components/AButton.svelte';
+    import AButton from '$assets/components/AButton.svelte';
     let Violet = "blueviolet";
-    import Cards from '../assets/components/CardsBox.svelte';
+    import Cards from '$assets/components/CardsBox.svelte';
     import projectsDesc from '$assets/components/projectCards.json'
+    import ContactButton from '$assets/components/ContactButton.svelte';
 </script>
 
 <section class="intro">
@@ -35,7 +36,24 @@
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>How to contact me:</p>
+    <p>Get in touch with me:</p>
+    <div class="contact-box">
+        <ContactButton
+        link="https://www.linkedin.com/in/nell-truong/"
+        icon="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+        text="Linkedin">
+        </ContactButton>
+        <ContactButton
+        link="https://github.com/Nell15"
+        icon="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        text="Github">
+        </ContactButton>
+        <ContactButton
+        link="email"
+        icon="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+        text="nelltruong67@gmail.com">
+        </ContactButton>
+    </div>
 </section>
 
 <style>
@@ -142,4 +160,15 @@
             height: auto;
         }
     }
+
+    .contact-box {
+        display: flex;
+        gap: 2em;
+    }
+
+    #contact > p {
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
 </style>

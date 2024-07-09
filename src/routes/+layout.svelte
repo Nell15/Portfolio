@@ -27,7 +27,7 @@
             <li on:click={closeMenu}><a href="/#projects">Projects</a></li>
             <li on:click={closeMenu}><a href="/skills">Skills</a></li>
             <li on:click={closeMenu}><a href="/experience">Experience</a></li>
-            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link={"/#about"} textColor={"#020409"} buttonColor={"#edeef1"}/></li>
+            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link={"/#contact"} textColor={"#020409"} buttonColor={"#edeef1"}/></li>
         </ul>
     </nav>
     <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>

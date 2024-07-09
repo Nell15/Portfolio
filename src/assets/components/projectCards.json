@@ -14,17 +14,31 @@
         "link": "https://github.com/cyrianR/poo-long-project-n7"
     },
     {
+        "title": "Minishell",
+        "description": "Minishell is a basic implementation of a Unix shell with command execution, redirections, etc...",
+        "icon": "none",
+        "language": "C",
+        "link": "none"
+    },
+    {
         "title": "TIPE",
-        "description": "I studied traffic light optimization in a python simulation. I tried reducing the waiting time by changing the lights algorithm.",
+        "description": "I studied traffic light optimization in a Python simulation. I tried reducing the waiting time by changing the lights algorithm.",
         "icon": "none",
         "language": "Python",
         "link": "none"
     },
     {
         "title": "PC build",
-        "description": "I my own desktop computer and keyboard.",
+        "description": "I built my own desktop computer and keyboard after researching and sourcing the necessary components.",
         "icon": "none",
-        "language": "none",
+        "language": "Hardware",
+        "link": "none"
+    },
+    {
+        "title": "Cellular automaton",
+        "description": "I developped a simple elementary cellular automaton when I discovered Rule 110.",
+        "icon": "none",
+        "language": "Python",
         "link": "none"
     }
 ]
