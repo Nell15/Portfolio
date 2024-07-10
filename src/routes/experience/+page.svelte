@@ -3,39 +3,66 @@
 </script>
 
 <main>
-    <h1>Volonteering</h1>
     <section>
+        <h1>Places I've worked at</h1>
 
-    </section>
-    <section class="CdL">
-        <h2>Capitole du libre</h2>
-        <p>
-            During my time at N7, I had the opportunity to be part of the staff at the 
-            <a href="https://capitoledulibre.org/">Capitole du Libre</a>, an event centered around promoting 
-            free software and open-source technologies.
-        </p>
-        <p>
-            I was part of TVn7's crew during the event (TVn7 being N7's audiovisual association). 
-            During the event, I filmed and edited conferences regarding diverse topics and learned the basics of 
-            control booths.
-        </p>
-        <!-- svelte-ignore a11y-img-redundant-alt -->
-        <div class="picdiv">
-            <img src={cdl_atem} alt="Picture of a Blackmagic Atem Extreme Iso" id="CdL_pic">
+        <div>
+            <h2>
+                SNCF - CIE Data
+            </h2>
+            <p>Developper for AR (Augmented Reality) experiences using Unreal Engine 5.</p>
         </div>
-        <p class="subtext">
-            Above is a picture of an Blackmagic Atem Extreme Iso which I used to familiarize myself with using a 
-            control booth before helping as co-director in the evening.
-        </p>
     </section>
+
+
     <section>
-        <h2>Toulouse Hacking Convention</h2>
-        <p>The <a href="https://thcon.party/">Toulouse Hacking Convention</a> is an event centered around cybersecurity. The event consist of two days of conferences
-            on the subject and one day dedicated to a CTF (Capture The Flag).
-        </p>
-        <p>I volonteered at the Toulouse Hacking Convention as part of net7's and TVn7's staff. 
-            I was part of the staff at the entry of event and also a cameraman during one of the conferences.
-        </p>
+        <h1>Volonteering</h1>
+
+        <div>
+            <h2>
+                net7
+            </h2>
+            <p>Treasurer</p>
+        </div>
+
+        <div>
+            <h2>
+                TVn7
+            </h2>
+            <p>IT Manager</p>
+        </div>
+
+        <div class="CdL">
+            <h2>Capitole du libre</h2>
+            <p>
+                During my time at N7, I had the opportunity to be part of the staff at the 
+                <a href="https://capitoledulibre.org/">Capitole du Libre</a>, an event centered around promoting 
+                free software and open-source technologies.
+            </p>
+            <p>
+                I was part of TVn7's crew during the event (TVn7 being N7's audiovisual association). 
+                During the event, I filmed and edited conferences regarding diverse topics and learned the basics of 
+                control booths.
+            </p>
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <div class="picdiv">
+                <img src={cdl_atem} alt="Picture of a Blackmagic Atem Extreme Iso" id="CdL_pic">
+            </div>
+            <p class="subtext">
+                Above is a picture of an Blackmagic Atem Extreme Iso which I used to familiarize myself with using a 
+                control booth before helping as co-director in the evening.
+            </p>
+        </div>
+    
+        <div>
+            <h2>Toulouse Hacking Convention</h2>
+            <p>The <a href="https://thcon.party/">Toulouse Hacking Convention</a> is an event centered around cybersecurity. The event consist of two days of conferences
+                on the subject and one day dedicated to a CTF (Capture The Flag).
+            </p>
+            <p>I volonteered at the Toulouse Hacking Convention as part of net7's and TVn7's staff. 
+                I was part of the staff at the entry of event and also a cameraman during one of the conferences.
+            </p>
+        </div>
     </section>
 </main>
 

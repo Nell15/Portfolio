@@ -48,4 +48,13 @@
         aspect-ratio: 1;
         object-fit: contain;
     }
+
+    a {
+        transition: transform 0.4s ease; /* Smooth transition for transform */
+    }
+
+    a:hover {
+        transform: translateY(-10px);
+    }
+
 </style>

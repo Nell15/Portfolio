@@ -4,15 +4,20 @@
     export let description;
     export let language;
     export let link;
+    let target;
 
     if (link === "none") {
+        target = "_self";
         link = "#projects";
+    }
+    else {
+        target = "_blank"
     }
 </script>
 
 
 <div class="ag-courses_item">
-    <a href={link} class="ag-courses-item_link" target="_blank">
+    <a href={link} class="ag-courses-item_link" target={target}>
         <div class="ag-courses-item_bg"></div>
             <span class="icon">
                 <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
