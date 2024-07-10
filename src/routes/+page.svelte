@@ -1,18 +1,20 @@
 <script>
     import pfp from '$assets/img/pfp.png'
+    import cvIcon from '$assets/img/CV_Icon.png'
     import HomeText from '$assets/components/HomeText.svelte'
     import AButton from '$assets/components/AButton.svelte';
     let Violet = "blueviolet";
     import Cards from '$assets/components/CardsBox.svelte';
     import projectsDesc from '$assets/components/projectCards.json'
     import ContactButton from '$assets/components/ContactButton.svelte';
+    import cv from '$assets/docs/CV_EN.pdf';
 </script>
 
 <section class="intro">
     <div>
         <h1>Hi, I'm </h1>
         <h1 style="color: {Violet}">Nell Truong.</h1>
-        <h2>I'm a engineering student.</h2>
+        <h2>I'm an engineering student.</h2>
         <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
             and currently doing an internship as a developer at 
             <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/">SNCF</a>.</p>
@@ -52,6 +54,11 @@
         link="email"
         icon="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
         text="nelltruong67@gmail.com">
+        </ContactButton>
+        <ContactButton
+        link={cv}
+        icon={cvIcon}
+        text="Résumé">
         </ContactButton>
     </div>
 </section>

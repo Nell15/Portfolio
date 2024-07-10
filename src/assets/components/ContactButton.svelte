@@ -46,5 +46,6 @@
     .logo {
         height: 1.75em;
         aspect-ratio: 1;
+        object-fit: contain;
     }
 </style>
