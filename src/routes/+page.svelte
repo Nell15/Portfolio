@@ -43,7 +43,7 @@
         <ContactButton
         link="https://www.linkedin.com/in/nell-truong/"
         icon="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
-        text="Linkedin">
+        text="LinkedIn">
         </ContactButton>
         <ContactButton
         link="https://github.com/Nell15"
