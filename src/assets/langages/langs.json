@@ -1,12 +1,20 @@
 [
-    {"name":"Python", "file":"Python.png", "use":"all soft"},
+    {"name":"Python", "file":"Python.png", "use":"all soft ia"},
     {"name":"C", "file":"C.png", "use":"all soft"},
     {"name":"Java", "file":"Java.png", "use":"all soft"},
-    {"name":"Ada", "file":"Ada.svg", "use":"all soft"},
+    {"name":"Ada", "file":"Ada.svg", "use":"all"},
     {"name":"HTML", "file":"html.png", "use":"all web"},
     {"name":"CSS", "file":"css.png", "use":"all web"},
     {"name":"Svelte", "file":"Svelte.svg", "use":"all web"},
     {"name":"Arduino", "file":"Arduino.svg", "use":"all"},
     {"name":"JavaFx", "file":"JavaFX.png", "use":"all soft"},
-    {"name":"Git", "file":"Git.svg", "use":"all soft web"}
+    {"name":"Git", "file":"Git.svg", "use":"all soft web"},
+    {"name":"Tensorflow", "file":"Tensorflow_logo.svg", "use":"all ia"},
+    {"name":"Keras", "file":"Keras_logo.svg", "use":"all ia"},
+    {"name":"Unreal Engine", "file":"Unreal_Engine_Logo.svg", "use":"all game software"},
+    {"name":"C++", "file":"CPP_Logo.svg", "use":"all game"},
+    {"name":"Premiere Pro", "file":"Premiere_Pro.svg", "use":"all software"},
+    {"name":"Solidworks", "file":"solidworks.png", "use":"all software"},
+    {"name":"Matlab", "file":"Matlab.png", "use":"all"},
+    {"name":"Scilab", "file":"scilab.png", "use":"all"}
 ]
