@@ -67,19 +67,21 @@
     @media only screen and (max-width: 799px) {
         nav {
             opacity: 0;
+            display: block;
             text-align: center;
             justify-content: center;
-            display: block;
             position: absolute;
             top: 100%;
             left: 0;
             width: 100%;
             background-color: #fafbfe;
             transition: all 0.25s ease-in-out;
+            visibility: hidden;
         }
 
         nav.open {
             opacity: 1;
+            visibility: visible;
         }
     }
     

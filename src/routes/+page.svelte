@@ -82,7 +82,7 @@
         background-color: #fafbfe;
     }
 
-    :global(a), :global(a:hover), :global(a:visited), :global(a:active) {
+    :global(a), :global(a:visited), :global(a:active) {
         /* color: inherit; */
         color: #8a2be2;
         text-decoration: none;
@@ -137,6 +137,11 @@
 
     .pfp {
         border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .pfp:hover {
+        transform: scale(1.05);
     }
 
     .abt_section {

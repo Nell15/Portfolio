@@ -59,11 +59,14 @@
                     id="CdL_pic"
                 />
             </div>
-            <p class="subtext">
+            <p>
                 Above is a picture of an Blackmagic Atem Extreme Iso which I
                 used to familiarize myself with using a control booth before
                 helping as co-director in the evening.
             </p>
+            <div class="languages">
+                <a href="https://www.adobe.com/products/premiere.html" target="_blank">Premiere Pro</a>
+            </div>
         </div>
 
         <div class="job">
@@ -84,12 +87,6 @@
 </main>
 
 <style>
-    :global(html) {
-        padding: 0;
-        margin: 0;
-        font-family: "HK Grostesk", sans-serif;
-    }
-
     main {
         font-weight: 500;
         font-size: 14px;
@@ -99,7 +96,6 @@
     }
 
     h1 {
-        /* font-size: 4rem; */
         font-size: clamp(25px, 8vw, 45px);
         font-weight: bold;
         margin: auto;
@@ -153,11 +149,17 @@
         display: flex;
     }
 
-    .subtext {
-        width: 80%;
-    }
-
     #CdL_pic {
         width: 50rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        main {
+            padding: 0 0.5rem;
+        }
+
+        #CdL_pic {
+            width: 100%;
+        }
     }
 </style>
