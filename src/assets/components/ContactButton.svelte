@@ -11,7 +11,7 @@
             {#if (icon != "none")}
                 <img src={icon} class="logo"/>
             {/if}
-            {text}
+            <p>{text}</p>
         </button>
     </a>
 {:else}
@@ -20,7 +20,7 @@
             {#if (icon != "none")}
                 <img src={icon} class="logo"/>
             {/if}
-            {text}
+            <p>{text}</p>
         </button>
     </a>
 {/if}
@@ -55,6 +55,22 @@
 
     a:hover {
         transform: translateY(-10px);
+    }
+
+    @media screen and (max-width: 680px) {
+
+        button {
+            width: 6em;
+            height: 6em;
+        }
+
+        .logo {
+            height: 2.75em;
+        }
+
+        p {
+            display: none;
+        }
     }
 
 </style>

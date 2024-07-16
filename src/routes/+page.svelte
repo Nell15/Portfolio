@@ -200,6 +200,12 @@
         font-size: 1.5em;
     }
 
-    
+    @media screen and (max-width: 680px) {
+        .contact-box {
+            margin: 0 2em;
+            gap: 1em;
+            justify-content: center;
+        }
+    }
 
 </style>

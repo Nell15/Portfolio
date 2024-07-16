@@ -13,13 +13,6 @@
 			link={proj.link}>
 			</Card>
 		{/each}
-		<!-- <Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card> -->
     </div>
 </div>
 
@@ -45,9 +38,9 @@
 		padding: 1em 0;
 	}
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 1142px) {
 		.ag-format-container {
-		width: 96%;
+		width: 96vw;
 		}
 	}
 </style>

@@ -7,7 +7,7 @@
 
 <main>
     <h1>Skills</h1>
-    <p style="margin-bottom: 2em;">Here are technologies I am either familiar with or learning :</p>
+    <p class="text">Here are technologies I am either familiar with or learning :</p>
 
     <div class="big-box">
         <div class="tab-buttons">
@@ -56,6 +56,20 @@
                 {/each}
             </div>
         </div>
+        <div class="phone-tab">
+            <div class='lang_container'>
+                {#each langs as l}
+                    {#if l.use.includes("all")}
+                        <div class='lang'>
+                            <div class='img'>
+                                <img src={`${path}${l.file}`} alt={l.name} class='lang_img'>
+                            </div>
+                            <p style="text-align:center">{l.name}</p>
+                        </div>
+                    {/if}
+                {/each}
+            </div>
+        </div>
     </div>
 </main>
 
@@ -66,6 +80,10 @@
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
+    }
+
+    .text {
+        margin-bottom: 2em;
     }
 
     .big-box{
@@ -147,5 +165,43 @@
         width: 5rem;
         margin-top: 1em;
         margin-bottom: 0;
+    }
+
+    .phone-tab {
+        display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .text {
+            text-align: center;
+            margin: 0 1em;
+        }
+
+        .big-box {
+            filter: none;
+        }
+
+        .tab-buttons {
+            display: none;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .lang_container{
+            width: auto;
+            gap: 1em;
+        }
+
+        .lang {
+            padding: 0;
+        }
+
+        .phone-tab {
+            display:flex;
+            margin-bottom: 10em;
+        }   
     }
 </style>
