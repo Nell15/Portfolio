@@ -57,7 +57,7 @@
         transform: translateY(-10px);
     }
 
-    @media screen and (max-width: 975px) {
+    @media screen and (max-width: 680px) {
 
         button {
             width: 6em;

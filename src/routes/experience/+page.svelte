@@ -1,5 +1,4 @@
 <script>
-    import {base} from '$app/paths';
     import cdl_atem from "$assets/img/CdL_atem.jpg";
 </script>
 

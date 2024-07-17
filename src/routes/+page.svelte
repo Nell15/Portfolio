@@ -85,14 +85,14 @@
     }
 
     .intro {
-        min-height: 85vh;
+        height: 85vh;
     }
 
     .intro div {
         padding: 12em 20em 0px;
     }
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 500px){
         .intro div {
             padding: 8em 1em 0px;
         }
@@ -160,32 +160,10 @@
         justify-content: space-between;
     }
 
-
-    @media screen and (max-width: 1100px) {
-        .abt {
-            flex-direction: column-reverse;
-            width: 85%;
-        }
-
-        .pfp {
-            width: 20em;
-            height: auto;
-        }
-    }
-
-    @media screen and (max-height: 500px) {
-        .abt {
-            flex-direction: column-reverse;
-            width: 85%;
-        }
-
-        .pfp {
-            width: 20em;
-            height: auto;
-        }
-    }
-
     @media screen and (max-width: 800px) {
+        .intro {
+            height: 85vh;
+        }
 
         .abt {
             flex-direction: column-reverse;

@@ -15,10 +15,6 @@ const config = {
 		alias: {
 			$assets: "src/assets"
 		},
-
-		// prerender: {
-		// 	handleMissingId: 'ignore'
-		//   },
 	}
 };
 

@@ -49,7 +49,7 @@
                     {#if l.use.includes(use)}
                         <div class='lang'>
                             <div class='img'>
-                                <img src={bases}{`${path}${l.file}`} alt={l.name} class='lang_img'>
+                                <img src={base}{`${path}${l.file}`} alt={l.name} class='lang_img'>
                             </div>
                             <p style="text-align:center">{l.name}</p>
                         </div>
