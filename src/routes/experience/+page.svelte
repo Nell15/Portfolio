@@ -55,7 +55,7 @@
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <div class="picdiv">
                 <img
-                    src={base}{cdl_atem}
+                    src={cdl_atem}
                     alt="Picture of a Blackmagic Atem Extreme Iso"
                     id="CdL_pic"
                 />
