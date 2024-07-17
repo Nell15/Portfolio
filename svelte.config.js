@@ -15,6 +15,29 @@ const config = {
 		alias: {
 			$assets: "src/assets"
 		},
+
+		prerender: {
+			handleMissingId: 'ignore'
+		  },
+
+		// vite: {
+		// 	server: {
+		// 	  fs: {
+		// 		allow: ['public']
+		// 	  }
+		// 	},
+		// 	plugins: [
+		// 		{
+		// 		name: 'external-resources',
+		// 			resolveId(source) {
+		// 			if (source.startsWith('https://')) {
+		// 				return { id: source, external: true };
+		// 			}
+		// 			return null;
+		// 			}
+		// 		}
+		// 	]
+		// }
 	}
 };
 
