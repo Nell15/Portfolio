@@ -1,4 +1,5 @@
 <script>
+    import {base} from '$app/paths';
     import AButton from '../assets/components/AButton.svelte';
     let isMenuOpen = false;
 
@@ -14,20 +15,20 @@
 </script>
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="{base}https://fonts.googleapis.com">
+    <link rel="preconnect" href="{base}https://fonts.gstatic.com" crossorigin>
+    <link href="{base}https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <header>
-    <a href="/" class="logo"><h1>Nell Truong</h1></a>
+    <a href="{base}/" class="logo"><h1>Nell Truong</h1></a>
     <nav class:open={isMenuOpen}>
         <ul>
-            <li on:click={closeMenu}><a class="current" href="/">Home</a></li>
-            <li on:click={closeMenu}><a href="/#projects">Projects</a></li>
-            <li on:click={closeMenu}><a href="/skills">Skills</a></li>
-            <li on:click={closeMenu}><a href="/experience">Experience</a></li>
-            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link={"/#contact"} textColor={"#020409"} buttonColor={"#edeef1"}/></li>
+            <li on:click={closeMenu}><a class="current" href="{base}/">Home</a></li>
+            <li on:click={closeMenu}><a href="{base}/#projects">Projects</a></li>
+            <li on:click={closeMenu}><a href="{base}/skills">Skills</a></li>
+            <li on:click={closeMenu}><a href="{base}/experience">Experience</a></li>
+            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link="{base}/#contact" textColor={"#020409"} buttonColor={"#edeef1"}/></li>
         </ul>
     </nav>
     <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>
