@@ -171,7 +171,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 55rem) {
 
         .text {
             text-align: center;
@@ -193,6 +193,7 @@
         .lang_container{
             width: auto;
             gap: 1em;
+            justify-content: space-evenly;
         }
 
         .lang {
@@ -202,6 +203,7 @@
         .phone-tab {
             display:flex;
             margin-bottom: 10em;
+            align-items: center;
         }   
     }
 </style>
