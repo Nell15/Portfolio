@@ -1,5 +1,4 @@
 <script>
-    import {base} from '$app/paths';
     import AButton from '../assets/components/AButton.svelte';
     let isMenuOpen = false;
 
@@ -21,14 +20,14 @@
 </head>
 
 <header>
-    <a href="{base}/" class="logo"><h1>Nell Truong</h1></a>
+    <a href="/" class="logo"><h1>Nell Truong</h1></a>
     <nav class:open={isMenuOpen}>
         <ul>
-            <li on:click={closeMenu}><a class="current" href="{base}/">Home</a></li>
-            <li on:click={closeMenu}><a href="{base}/#projects">Projects</a></li>
-            <li on:click={closeMenu}><a href="{base}/skills">Skills</a></li>
-            <li on:click={closeMenu}><a href="{base}/experience">Experience</a></li>
-            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link="{base}/#contact" textColor={"#020409"} buttonColor={"#edeef1"}/></li>
+            <li on:click={closeMenu}><a class="current" href="/">Home</a></li>
+            <li on:click={closeMenu}><a href="/#projects">Projects</a></li>
+            <li on:click={closeMenu}><a href="/skills">Skills</a></li>
+            <li on:click={closeMenu}><a href="/experience">Experience</a></li>
+            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link="/#contact" textColor={"#020409"} buttonColor={"#edeef1"}/></li>
         </ul>
     </nav>
     <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>

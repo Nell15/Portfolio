@@ -1,5 +1,4 @@
 <script>
-    import {base} from '$app/paths';
     import pfp from '$assets/img/pfp.png'
     import cvIcon from '$assets/img/CV_Icon.png'
     import HomeText from '$assets/components/HomeText.svelte'
@@ -19,7 +18,7 @@
         <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
             and currently doing an internship as a developer at 
             <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/">SNCF</a>.</p>
-        <AButton text={"Learn more"} link="{base}#about" textColor={Violet} buttonColor={Violet}/>
+        <AButton text={"Learn more"} link="#about" textColor={Violet} buttonColor={Violet}/>
     </div>
 </section>
 
