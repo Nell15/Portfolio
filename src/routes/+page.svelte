@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths'
     import HomeText from '$assets/components/HomeText.svelte'
     import AButton from '../assets/components/AButton.svelte';
     let Violet = "blueviolet";
@@ -15,7 +16,7 @@
         <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
             and currently doing an internship as a developer at 
             <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/">SNCF</a>.</p>
-        <AButton text={"Learn more"} link="#about" textColor={Violet} buttonColor={Violet}/>
+        <AButton text={"Learn more"} link="{base}/#about" textColor={Violet} buttonColor={Violet}/>
     </div>
 </section>
 
@@ -24,7 +25,7 @@
     <div class="abt" >
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="/img/pfp.png" alt="profile picture" class="pfp"/>
+        <img src="{base}/img/pfp.png" alt="profile picture" class="pfp"/>
     </div>
 </section>
 
@@ -54,7 +55,7 @@
         </ContactButton>
         <ContactButton
         link="/docs/CurriculumVitaeEN.pdf"
-        icon="/img/CV_Icon.png"
+        icon="{base}/img/CV_Icon.png"
         text="Curriculum Vitae">
         </ContactButton>
     </div>
