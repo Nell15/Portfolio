@@ -1,7 +1,6 @@
 <script>
-    import {base} from '$app/paths';
-    import langs from '$assets/langages/langs.json';
-    let path = 'src/assets/langages/';
+    import langs from '$assets/components/langs.json';
+    let path = '/langages/';
 
     let use = "all";
 </script>

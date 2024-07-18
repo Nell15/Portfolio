@@ -1,13 +1,10 @@
 <script>
-    import pfp from '$assets/img/pfp.png'
-    import cvIcon from '$assets/img/CV_Icon.png'
     import HomeText from '$assets/components/HomeText.svelte'
-    import AButton from '$assets/components/AButton.svelte';
+    import AButton from '../assets/components/AButton.svelte';
     let Violet = "blueviolet";
-    import Cards from '$assets/components/CardsBox.svelte';
-    import projectsDesc from '$assets/components/projectCards.json'
-    import ContactButton from '$assets/components/ContactButton.svelte';
-    import cv from '$assets/docs/CurriculumVitaeEN.pdf';
+    import Cards from '../assets/components/CardsBox.svelte';
+    import projectsDesc from '../assets/components/projectCards.json'
+    import ContactButton from '../assets/components/ContactButton.svelte';
 </script>
 
 <section class="intro">
@@ -27,7 +24,7 @@
     <div class="abt" >
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src={pfp} alt="profile picture" class="pfp"/>
+        <img src="/img/pfp.png" alt="profile picture" class="pfp"/>
     </div>
 </section>
 
@@ -56,8 +53,8 @@
         text="nelltruong67@gmail.com">
         </ContactButton>
         <ContactButton
-        link={cv}
-        icon={cvIcon}
+        link="/docs/CurriculumVitaeEN.pdf"
+        icon="/img/CV_Icon.png"
         text="Curriculum Vitae">
         </ContactButton>
     </div>

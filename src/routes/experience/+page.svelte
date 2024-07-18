@@ -1,5 +1,5 @@
 <script>
-    import cdl_atem from "$assets/img/CdL_atem.jpg";
+    // import cdl_atem from "";
 </script>
 
 <main>
@@ -54,7 +54,7 @@
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <div class="picdiv">
                 <img
-                    src={cdl_atem}
+                    src="/img/CdL_atem.jpg"
                     alt="Picture of a Blackmagic Atem Extreme Iso"
                     id="CdL_pic"
                 />
