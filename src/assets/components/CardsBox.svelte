@@ -3,8 +3,8 @@
 	export let contentFile;
 </script>
 
-<div class="ag-format-container">
-    <div class="ag-courses_box">
+<div class="container">
+    <div class="card-box">
 		{#each contentFile as proj}
 			<Card
 			title={proj.title}
@@ -17,7 +17,7 @@
 </div>
 
 <style>
-	.ag-format-container {
+	.container {
 		width: 1142px;
 		margin: 0 auto;
 	}
@@ -26,7 +26,7 @@
 		background-color: #fafbfe;
 	}
 	
-	.ag-courses_box {
+	.card-box {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -39,7 +39,7 @@
 	}
 
 	@media only screen and (max-width: 1142px) {
-		.ag-format-container {
+		.container {
 		width: 96vw;
 		}
 	}

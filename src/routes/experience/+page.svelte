@@ -93,6 +93,7 @@
         color: #020409;
         padding: 0px 5rem;
         display: block;
+        background-color: #fafbfe;
     }
 
     h1 {

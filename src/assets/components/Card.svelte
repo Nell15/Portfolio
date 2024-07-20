@@ -16,19 +16,19 @@
 </script>
 
 
-<div class="ag-courses_item">
-    <a href={link} class="ag-courses-item_link" target={target}>
-        <div class="ag-courses-item_bg"></div>
+<div class="card-item">
+    <a href={link} class="card-link" target={target}>
+        <div class="card-bg"></div>
             <span class="icon">
                 <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
             </span>
 
-        <div class="ag-courses-item_title">
+        <div class="card-title">
             {title}
         </div>
 
-        <div class="ag-courses-item_date-box">
-            <span class="ag-courses-item_date">
+        <div class="card-details">
+            <span class="card-description">
                 {#if description != "none"}
                     {description}
                 {/if}
@@ -43,7 +43,7 @@
 
 <style>
 
-.ag-courses_item {
+.card-item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
     margin: 0 15px 30px;
@@ -51,7 +51,7 @@
     border-radius: 28px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
-.ag-courses-item_link {
+.card-link {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     display: block;
     padding: 30px 20px;
@@ -61,19 +61,19 @@
 
     position: relative;
 }
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_title,
-.ag-courses-item_link:hover .ag-courses-item_date,
-.ag-courses-item_link:hover .lang {
+.card-link:hover,
+.card-link:hover .card-title,
+.card-link:hover .card-description,
+.card-link:hover .lang {
     text-decoration: none;
     color: #FFF;
 }
-.ag-courses-item_link:hover .ag-courses-item_bg {
+.card-link:hover .card-bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
     transform: scale(10);
 }
-.ag-courses-item_title {
+.card-title {
     margin: 0.2em 0 0.5em;
 
     overflow: hidden;
@@ -88,7 +88,7 @@
     -o-transition: color .5s ease;
     transition: color .5s ease;
 }
-.ag-courses-item_date-box {
+.card-details {
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -96,7 +96,7 @@
     z-index: 2;
     position: relative;
 }
-.ag-courses-item_date {
+.card-description {
     color: #020409;
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
@@ -110,7 +110,7 @@
     -o-transition: color .5s ease;
     transition: color .5s ease;
 }
-.ag-courses-item_bg {
+.card-bg {
     height: 128px;
     width: 128px;
     background-color: #c5b3fb;
@@ -126,52 +126,52 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+.card-item:nth-child(2n) .card-bg {
     background-color: #8A2BE2;
 }
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+.card-item:nth-child(3n) .card-bg {
     background-color: #2ea4ff;
 }
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+.card-item:nth-child(4n) .card-bg {
     background-color: #952aff;
 }
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+.card-item:nth-child(5n) .card-bg {
     background-color: #29caff;
 }
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+.card-item:nth-child(6n) .card-bg {
     background-color: #5500dd;
 }
 
 @media screen and (min-width: 1142px) {
-    .ag-courses_item {
+    .card-item {
         aspect-ratio: 1.25;
     }
 
-    .ag-courses-item_link {
+    .card-link {
         aspect-ratio: 1.25;
     }
 }
 
 @media only screen and (max-width: 979px) {
-  .ag-courses-item_title {
+  .card-title {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 639px) {
-    .ag-courses_item {
+    .card-item {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
-    .ag-courses-item_title {
+    .card-title {
         line-height: 1;
 
         font-size: 24px;
     }
-    .ag-courses-item_link {
+    .card-link {
         padding: 22px 40px;
     }
-    .ag-courses-item_date-box {
+    .card-details {
         font-size: 16px;
     }
 }

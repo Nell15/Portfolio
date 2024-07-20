@@ -13,7 +13,7 @@
         In september 2023, I enrolled in <a href="https://www.enseeiht.fr/en/index.html" target="_blank">N7 (ENSEEIHT)</a> 
         after, partaking in the engineering schools entrance exam earlier in May of the same year.
     </p>
-    <p> I am currently working at 
+    <p> I have recently completed my internship at 
     <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">SNCF (Eastern Engineering Cluster - Data)</a>
      as a developer working on AR (Augmented Reality) experiences in Unreal Engine.
     </p>
