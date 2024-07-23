@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths'
+
     export let title;
     export let icon;
     export let description;
@@ -20,8 +22,12 @@
     <a href={link} class="card-link" target={target}>
         <div class="card-bg"></div>
             <span class="icon">
-                <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
-            </span>
+                {#if icon != "none"}
+                    <img src="/img/{icon}"/>
+                {:else}
+                    <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
+                {/if}
+                </span>
 
         <div class="card-title">
             {title}
@@ -193,14 +199,19 @@
 
 }
 .icon > img {
-    height: 4em;
+    object-fit: contain;
+    height: 2em;
+    max-width: 2.5em;
+    margin-bottom: 0.5em;
     position: relative;
     z-index: 1;
     display: block;
-    width: 24px;
-    height: 24px;
     transform: translateZ(0);
     color: #020409;
-    transition: color .25s;
+    transition: all .5s;
+}
+
+.card-link:hover img {
+    filter: invert(1);
 }
 </style>

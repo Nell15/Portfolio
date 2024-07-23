@@ -2,42 +2,42 @@
     {
         "title": "Portfolio",
         "description": "This is the website you are currently browsing ! It is also the project I am currently working on.",
-        "icon": "none",
+        "icon": "CV_Icon.png",
         "language": "Svelte",
         "link": "none"
     },
     {
         "title": "N7 Studio",
         "description": "N7 Studio is a music composition software that we developped as a group project for school.",
-        "icon": "none",
+        "icon": "N7_Studio.png",
         "language": "Java",
         "link": "https://github.com/cyrianR/poo-long-project-n7"
     },
     {
         "title": "Minishell",
         "description": "Minishell is a basic implementation of a Unix shell with command execution, redirections, etc...",
-        "icon": "none",
+        "icon": "Screen_Icon.svg",
         "language": "C",
         "link": "none"
     },
     {
         "title": "TIPE",
         "description": "I studied traffic light optimization in a Python simulation. I tried reducing the waiting time by changing the lights algorithm.",
-        "icon": "none",
+        "icon": "TIPE_Icon.svg",
         "language": "Python",
         "link": "none"
     },
     {
         "title": "PC build",
         "description": "I built my own desktop computer and keyboard after researching and sourcing the necessary components.",
-        "icon": "none",
+        "icon": "PCBuild_Icon.svg",
         "language": "Hardware",
         "link": "none"
     },
     {
         "title": "Cellular automaton",
         "description": "I developped a simple elementary cellular automaton when I discovered Rule 110.",
-        "icon": "none",
+        "icon": "Automaton_Icon.svg",
         "language": "Python",
         "link": "https://github.com/Nell15/Cellular-Automaton"
     }

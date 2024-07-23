@@ -9,6 +9,7 @@
 			<Card
 			title={proj.title}
 			description={proj.description}
+			icon={proj.icon}
 			language={proj.language}
 			link={proj.link}>
 			</Card>
