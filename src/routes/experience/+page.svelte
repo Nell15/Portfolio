@@ -7,7 +7,11 @@
         <h1>Places I've worked at</h1>
 
         <div class="job">
-            <h2>SNCF - CIE DATA (Eastern Engineering Cluster)</h2>
+            <h2>
+                <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">
+                    SNCF - CIE DATA (Eastern Engineering Cluster)
+                </a>
+            </h2>
             <p class="job-detail">2024 • Developer Intern</p>
             <p>
                 Developper for AR (Augmented Reality) experiences using Unreal
@@ -26,17 +30,17 @@
         <h1>Volonteering</h1>
 
         <div class="job">
-            <h2>net7</h2>
+            <h2><a href="https://net7.dev/" target="_blank">net7</a></h2>
             <p class="job-detail">2024-2025 • Treasurer</p>
         </div>
 
         <div class="job">
-            <h2>TVn7</h2>
+            <h2><a href="https://www.tvn7.fr/" target="_blank">TVn7</a></h2>
             <p class="job-detail">2024-2025 • IT Manager</p>
         </div>
 
         <div class="job">
-            <h2>Capitole du libre</h2>
+            <h2><a href="https://capitoledulibre.org/" target="_blank">Capitole du libre</a></h2>
             <p>
                 During my time at N7, I had the opportunity to be part of the
                 staff at the
@@ -70,11 +74,9 @@
         </div>
 
         <div class="job">
-            <h2>Toulouse Hacking Convention</h2>
+            <h2><a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a></h2>
             <p>
-                The <a href="https://thcon.party/" target="_blank"
-                    >Toulouse Hacking Convention</a
-                >
+                The <a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a>
                 is an event centered around cybersecurity. The event consist of
                 two days of conferences on the subject and one day dedicated to
                 a CTF (Capture The Flag). <br />
@@ -109,6 +111,30 @@
         margin: auto;
     }
 
+    h2 > a {
+        color: #020409;
+        display: inline-block;
+        position: relative;
+    }
+
+    h2 > a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: blueviolet;
+        transform-origin: bottom right;
+        transition: all 0.25s ease-in-out;
+    }
+
+    h2 > a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+
     section {
         display: block;
         margin: 7em 0;
@@ -137,11 +163,11 @@
         gap: 1em;
     }
 
-    .languages > a, .job  a {
+    .languages > a, .job > p > a {
         transition: all 0.3s ease-in-out;
     }
 
-    .languages >  a:hover, .job  a:hover {
+    .languages >  a:hover, .job > p > a:hover {
         color: rgb(64, 1, 166);
         font-weight: bold;
     }
