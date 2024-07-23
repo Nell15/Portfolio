@@ -1,20 +1,111 @@
 [
-    {"name":"Python", "file":"Python.png", "use":"all soft ia"},
-    {"name":"C", "file":"C.png", "use":"all soft"},
-    {"name":"Java", "file":"Java.png", "use":"all soft"},
-    {"name":"Ada", "file":"Ada.png", "use":"all"},
-    {"name":"HTML", "file":"html.png", "use":"all web"},
-    {"name":"CSS", "file":"css.png", "use":"all web"},
-    {"name":"Svelte", "file":"Svelte.svg", "use":"all web"},
-    {"name":"Arduino", "file":"Arduino.png", "use":"all"},
-    {"name":"JavaFx", "file":"JavaFX.png", "use":"all soft"},
-    {"name":"Git", "file":"Git.png", "use":"all soft web"},
-    {"name":"Tensorflow", "file":"Tensorflow_logo.svg", "use":"all ia"},
-    {"name":"Keras", "file":"Keras_logo.svg", "use":"all ia"},
-    {"name":"Unreal Engine", "file":"Unreal_Engine_Logo.svg", "use":"all game software"},
-    {"name":"C++", "file":"CPP_Logo.svg", "use":"all game"},
-    {"name":"Premiere Pro", "file":"Premiere_Pro.svg", "use":"all software"},
-    {"name":"Solidworks", "file":"solidworks.png", "use":"all software"},
-    {"name":"Matlab", "file":"Matlab.png", "use":"all"},
-    {"name":"Scilab", "file":"scilab.png", "use":"all"}
+    {
+        "name":"Python",
+        "file":"Python.png",
+        "use":"all soft ia",
+        "link":"https://www.python.org/"
+    },
+    {
+        "name":"C",
+        "file":"C.png",
+        "use":"all soft",
+        "link":"https://en.wikipedia.org/wiki/C_(programming_language)"
+    },
+    {
+        "name":"Java",
+        "file":"Java.png",
+        "use":"all soft",
+        "link":"https://www.java.com/en/"
+    },
+    {
+        "name":"Ada",
+        "file":"Ada.png",
+        "use":"all",
+        "link":"https://www.adacore.com/about-ada"
+    },
+    {
+        "name":"HTML",
+        "file":"html.png",
+        "use":"all web",
+        "link":"https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+        "name":"CSS",
+        "file":"css.png",
+        "use":"all web",
+        "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+        "name":"Svelte",
+        "file":"Svelte.svg",
+        "use":"all web",
+        "link":"https://svelte.dev/"
+    },
+    {
+        "name":"Arduino",
+        "file":"Arduino.png",
+        "use":"all",
+        "link":"https://www.arduino.cc/"
+    },
+    {
+        "name":"JavaFx",
+        "file":"JavaFX.png",
+        "use":"all soft",
+        "link":"https://openjfx.io/"
+    },
+    {
+        "name":"Git",
+        "file":"Git.png",
+        "use":"all soft web",
+        "link":"https://git-scm.com/"
+    },
+    {
+        "name":"Tensorflow",
+        "file":"Tensorflow_logo.svg",
+        "use":"all ia",
+        "link":"https://www.tensorflow.org/"
+    },
+    {
+        "name":"Keras",
+        "file":"Keras_logo.svg",
+        "use":"all ia",
+        "link":"https://keras.io/"
+    },
+    {
+        "name":"Unreal Engine",
+        "file":"Unreal_Engine_Logo.svg",
+        "use":"all game software",
+        "link":"https://www.unrealengine.com/en-US"
+    },
+    {
+        "name":"C++",
+        "file":"CPP_Logo.svg",
+        "use":"all game",
+        "link":"https://en.wikipedia.org/wiki/C%2B%2B"
+    },
+    {
+        "name":"Premiere Pro",
+        "file":"Premiere_Pro.svg",
+        "use":"all software",
+        "link":"https://www.adobe.com/products/premiere.html"
+    },
+    {
+        "name":"Solidworks",
+        "file":"solidworks.png",
+        "use":"all software",
+        "link":"https://www.solidworks.com/"
+    },
+    {
+        "name":"Matlab",
+        "file":"Matlab.png",
+        "use":"all",
+        "link":"https://fr.mathworks.com/products/matlab.html"
+    },
+    {
+        "name":"Scilab",
+        "file":"scilab.png",
+        "use":"all",
+        "link":"https://www.scilab.org/"
+    }
+
 ]
