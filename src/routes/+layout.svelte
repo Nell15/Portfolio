@@ -51,7 +51,7 @@
         </svg>
         MIT license
     </div>
-    <p>Made using <a href="https://kit.svelte.dev/" target="_blank">Svelte Kit</a> !</p>
+    <p>Made using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> !</p>
     <p>Access the <a href="https://github.com/Nell15/reportfolio" target="_blank">source code</a>.</p>
 </footer>
 

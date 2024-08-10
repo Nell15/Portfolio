@@ -82,22 +82,28 @@
     }
 
     .intro {
-        height: 85vh;
+        min-height: 85vh;
     }
 
     .intro div {
         padding: 12em 20em 0px;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 800px){
         .intro div {
             padding: 8em 1em 0px;
         }
     }
 
+    @media screen and (max-height: 800px) {
+        .intro div {
+            padding: 3em 3em 0px;
+        }
+    }
+
     @media screen and (max-height: 500px) {
         .intro div {
-            padding: 1em 1em 0px;
+            padding: 1em 3em 0px;
         }
     }
 
