@@ -32,11 +32,17 @@
         <div class="job">
             <h2><a href="https://net7.dev/" target="_blank">net7</a></h2>
             <p class="job-detail">2024-2025 • Treasurer</p>
+            <p>As net7's treasurer, my involves keeping track of the association's treasury, its expenses and other tasks involving funds.
+                I also took part in certain administrative tasks as well as the management of social media communication / announcements.
+            </p>
         </div>
 
         <div class="job">
             <h2><a href="https://www.tvn7.fr/" target="_blank">TVn7</a></h2>
             <p class="job-detail">2024-2025 • IT Manager</p>
+            <p>As TVn7's IT manager, my job consists in helping members with troubleshooting issues on the association's computers and managing the 
+                association's server.
+            </p>
         </div>
 
         <div class="job">
