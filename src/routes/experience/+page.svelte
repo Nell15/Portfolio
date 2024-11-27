@@ -47,6 +47,7 @@
 
         <div class="job">
             <h2><a href="https://capitoledulibre.org/" target="_blank">Capitole du libre</a></h2>
+            <p class="job-detail">November, 2023 and 2024 • Videographer and photographer</p>
             <p>
                 During my time at N7, I had the opportunity to be part of the
                 staff at the
@@ -58,15 +59,36 @@
             <p>
                 I was part of TVn7's crew during the event (TVn7 is N7's
                 audiovisual association). During the event, I filmed and edited
-                conferences regarding diverse topics and learned the basics of
-                control booths.
+                conferences regarding diverse topics related with open-source technologies.
+                I also discovered my passion for control booth during the event. <br>
+                During my second edition, I also volonteered as photographer for the event through Photo7 (N7's photography association).
             </p>
             <!-- svelte-ignore a11y-img-redundant-alt -->
-            <div class="picdiv">
+            <!-- <div class="picdiv">
                 <img
                     src="{base}/img/CdL_atem.jpg"
                     alt="Picture of a Blackmagic Atem Extreme Iso"
                     id="CdL_pic"
+                />
+            </div> -->
+            <div class="picdiv">
+                <!-- svelte-ignore a11y-img-redundant-alt -->
+                <img
+                    src="{base}/img/CdL/atem_mini.jpg"
+                    alt="Picture of me using a Blackmagic Atem Extreme Iso"
+                    class="CdL_pic"
+                />
+                <!-- svelte-ignore a11y-img-redundant-alt -->
+                <img
+                    src="{base}/img/CdL/video.jpg"
+                    alt="Picture of a me filming a conference"
+                    class="CdL_pic"
+                />
+                <!-- svelte-ignore a11y-img-redundant-alt -->
+                <img
+                    src="{base}/img/CdL/volonteers.jpg"
+                    alt="Picture of all vonlonteers"
+                    class="CdL_pic"
                 />
             </div>
             <p>
@@ -81,6 +103,7 @@
 
         <div class="job">
             <h2><a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a></h2>
+            <p class="job-detail">April 2024 • Volonteer</p>
             <p>
                 The <a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a>
                 is an event centered around cybersecurity. The event consist of
@@ -180,10 +203,14 @@
 
     .picdiv {
         display: flex;
+        justify-content: space-evenly;
     }
 
-    #CdL_pic {
-        width: 50rem;
+    .CdL_pic {
+        /* width: calc(50% - 0.75em); */
+        /* width: 49%; */
+        width: 29%;
+        border-radius: 1rem;
     }
 
     @media screen and (max-width: 800px) {
