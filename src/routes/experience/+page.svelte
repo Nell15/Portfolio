@@ -1,9 +1,11 @@
 <script>
     import { base } from '$app/paths'
+    import AButton from '../../assets/components/AButton.svelte';
+    import HoverablePic from '../../assets/components/HoverablePic.svelte'
 </script>
 
 <main>
-    <section class="job-section">
+    <section class="job-section" id="first">
         <h1>Places I've worked at</h1>
 
         <div class="job">
@@ -63,39 +65,35 @@
                 I also discovered my passion for control booth during the event. <br>
                 During my second edition, I also volonteered as photographer for the event through Photo7 (N7's photography association).
             </p>
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <!-- <div class="picdiv">
-                <img
-                    src="{base}/img/CdL_atem.jpg"
-                    alt="Picture of a Blackmagic Atem Extreme Iso"
-                    id="CdL_pic"
-                />
-            </div> -->
+
             <div class="picdiv">
-                <!-- svelte-ignore a11y-img-redundant-alt -->
-                <img
-                    src="{base}/img/CdL/atem_mini.jpg"
-                    alt="Picture of me using a Blackmagic Atem Extreme Iso"
-                    class="CdL_pic"
+                <HoverablePic
+                    img_path="CdL/atem_mini.jpg"
+                    text="Picture of me using a Blackmagic Atem Extreme Iso mini control booth to reccord a conference. 
+                    This is the tool I used to familiarize myself with control booths before making my way 
+                    to heavier equipement.  "
+                    link="https://photo7.inpt.fr/albums.php?id=62"
                 />
-                <!-- svelte-ignore a11y-img-redundant-alt -->
-                <img
-                    src="{base}/img/CdL/video.jpg"
-                    alt="Picture of a me filming a conference"
-                    class="CdL_pic"
+                <HoverablePic
+                    img_path="CdL/video.jpg"
+                    text="Me filming a conference on a Sony FX6 camera."
+                    link="https://photo7.inpt.fr/albums.php?id=62"
                 />
-                <!-- svelte-ignore a11y-img-redundant-alt -->
-                <img
-                    src="{base}/img/CdL/volonteers.jpg"
-                    alt="Picture of all vonlonteers"
-                    class="CdL_pic"
+                <HoverablePic
+                    img_path="CdL/volonteers.jpg"
+                    text="A shot of all (or at least most of) the people that volonteered during the Capitole du Libre in 2024."
+                    link="https://photo7.inpt.fr/albums.php?id=62"
                 />
             </div>
             <p>
-                Above is a picture of an Blackmagic Atem Extreme Iso which I
+                Above (from left to right) is a picture of :<br>
+                - me using Blackmagic Atem Extreme Iso which I
                 used to familiarize myself with using a control booth before
-                helping as co-director in the evening.
+                helping as co-director in the evening.<br>
+                - me filming a conference<br>
+                - all the volonteers that help in 2024's edition
             </p>
+            <p>Credits to <a href="https://photo7.inpt.fr/">Photo7</a> for the pictures.</p>
             <div class="languages">
                 <a href="https://www.adobe.com/products/premiere.html" target="_blank">Premiere Pro</a>
             </div>
@@ -122,7 +120,7 @@
         font-weight: 500;
         font-size: 14px;
         color: #020409;
-        padding: 0px 5rem;
+        padding: 0px 15rem;
         display: block;
         background-color: #fafbfe;
     }
@@ -202,15 +200,10 @@
     }
 
     .picdiv {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
         display: flex;
         justify-content: space-evenly;
-    }
-
-    .CdL_pic {
-        /* width: calc(50% - 0.75em); */
-        /* width: 49%; */
-        width: 29%;
-        border-radius: 1rem;
     }
 
     @media screen and (max-width: 800px) {
@@ -218,8 +211,20 @@
             padding: 0 0.5rem;
         }
 
-        #CdL_pic {
-            width: 100%;
+        section {
+            margin: 5em 0;
+        }
+
+        #first {
+            margin: 2em 0;
+        }
+
+        .picdiv {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1em;
         }
     }
 </style>
