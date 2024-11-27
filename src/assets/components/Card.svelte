@@ -196,8 +196,8 @@
         backdrop-filter: blur(2px);
         transition: background-color .25s, border-color .25s;
     }
-
 }
+
 .icon > img {
     object-fit: contain;
     height: 2em;
