@@ -93,7 +93,7 @@
                 - me filming a conference<br>
                 - all the volonteers that help in 2024's edition
             </p>
-            <p>Credits to <a href="https://photo7.inpt.fr/">Photo7</a> for the pictures.</p>
+            <p>Credits to <a href="https://photo7.inpt.fr/" target="_blank">Photo7</a> for the pictures.</p>
             <div class="languages">
                 <a href="https://www.adobe.com/products/premiere.html" target="_blank">Premiere Pro</a>
             </div>
