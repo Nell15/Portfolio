@@ -25,7 +25,7 @@
     <div class="abt" >
         <HomeText/>
         <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="{base}/img/pfp.png" alt="profile picture" class="pfp"/>
+        <img src="{base}/img/pfp.jpg" alt="profile picture" class="pfp"/>
     </div>
 </section>
 
@@ -129,6 +129,8 @@
     }
 
     .pfp {
+        width: 400px;
+        height: 400px   ;
         border-radius: 50%;
         transition: all 0.3s ease;
     }
