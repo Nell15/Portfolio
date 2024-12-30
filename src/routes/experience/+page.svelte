@@ -96,6 +96,7 @@
             <p>Credits to <a href="https://photo7.inpt.fr/" target="_blank">Photo7</a> for the pictures.</p>
             <div class="languages">
                 <a href="https://www.adobe.com/products/premiere.html" target="_blank">Premiere Pro</a>
+                <a href="https://www.adobe.com/products/photoshop-lightroom.html" target="_blank">Lightroom</a>
             </div>
         </div>
 
