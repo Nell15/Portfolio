@@ -130,7 +130,7 @@
 
     .pfp {
         width: 400px;
-        height: 400px   ;
+        height: 400px;
         border-radius: 50%;
         transition: all 0.3s ease;
     }
@@ -190,7 +190,7 @@
         flex-wrap: wrap;
         gap: 2em;
     }
-    
+
     #contact {
         margin-bottom: 15em;
     }
