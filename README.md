@@ -7,4 +7,4 @@ I built this website to display my projects and learn web development.
 
 Here's the link to my portfolio : [nelltruong.dev](https://nelltruong.dev/)
 
-Huge thanks to [@ewen-lbh](https://github.com/ewen-lbh) for his help ! :)
+Huge thanks to [@gwennlbh](https://github.com/gwennlbh) for her help ! :)
