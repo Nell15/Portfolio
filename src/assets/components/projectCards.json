@@ -1,10 +1,31 @@
 [
     {
+        "title": "Raytracer",
+        "description": "(Ongoing) A simple ray-tracer written in C++.",
+        "icon": "image.svg",
+        "language": "C++",
+        "link": "none"
+    },
+    {
+        "title": "Hagimule",
+        "description": "A peer-to-peer download software developped in Java using RMI and socket connections.",
+        "icon": "monitor-down.svg",
+        "language": "Java",
+        "link": "none"
+    },
+    {
+        "title": "Calculation model",
+        "description": "A simple tool to create calculation scripts inspired by Unreal Engine's blueprint system.",
+        "icon": "workflow.svg",
+        "language": "Model-driven engineering",
+        "link": "/projects/IDM"
+    },
+    {
         "title": "Portfolio",
         "description": "This is the website you are currently browsing ! It is also the project I am currently working on.",
         "icon": "CV_Icon.png",
         "language": "Svelte",
-        "link": "none"
+        "link": "https://nelltruong.dev"
     },
     {
         "title": "N7 Studio",

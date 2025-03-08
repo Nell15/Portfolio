@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
     import { base } from '$app/paths'
 
     export let title;
@@ -11,9 +11,15 @@
     if (link === "none") {
         target = "_self";
         link = "#projects";
+        console.log("none")
+    }
+    else if (link.startsWith("/projects/")) {
+        target = "_self"
+        console.log("project")
     }
     else {
         target = "_blank"
+        console.log("new")
     }
 </script>
 

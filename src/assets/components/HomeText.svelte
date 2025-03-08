@@ -2,7 +2,7 @@
     <p>
         I'm a 20 years old engineering student at N7 (ENSEEIHT)
         specializing in Computer Science. I am interested in object-oriented programming,
-        (especially applied to game development), parallel computing and graphics programing.
+        (especially applied to game development), parallel computing and computer graphics.
     </p>
     <p>
         My computer science journey started in junior high school when I started learning Scratch for game development.
