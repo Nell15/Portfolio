@@ -26,7 +26,7 @@
 	body {
 		background-color: #fafbfe;
 	}
-	
+
 	.card-box {
 		display: -webkit-box;
 		display: -ms-flexbox;

@@ -114,12 +114,12 @@
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
-    
+
     .tab-buttons button:hover {
         background-color: #c8c8cd;
         cursor: pointer;
     }
-    
+
     .tab-buttons button.open {
         transition: all 0.2s ease-in-out;
         background-color: #fafbfe;
@@ -156,7 +156,7 @@
         width: 4rem;
         object-fit: contain;
     }
-    
+
     .img {
         height: 4rem;
         width: 4rem;
@@ -210,6 +210,6 @@
             display:flex;
             margin-bottom: 10em;
             align-items: center;
-        }   
+        }
     }
 </style>
