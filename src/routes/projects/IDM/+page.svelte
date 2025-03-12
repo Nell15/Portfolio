@@ -3,9 +3,11 @@
 </script>
 
 <main>
-    <a href="{base}/#projects">Back to projects</a>
-    <h1>Small Scientific Calculation Model</h1>
     <div>
+        <!-- <p> -->
+            <a href="{base}/#projects" class="back">Back to projects</a>
+        <!-- </p> -->
+        <h1>Small Scientific Calculation Model</h1>
         <h2>Project Goal</h2>
         <p>
             The goal of this project was to create a script creation tool for simple calculations in order to
@@ -15,15 +17,16 @@
         </p>
         <p>
             This project is follows the principle of <b>Model Driven Engineering</b> and makes extensive
-             use of Model-to-Model and Model-to-Text tranformations to convert a script created from the
-             graphical tool to an executable Python scripts that computes the result.
+             use of Model-to-Model and Model-to-Text tranformations to be validate scripts created from the
+             graphical tool and convert them to executable Python scripts.
         </p>
-        <img src="{base}/img/projects/IDM/blueprint.png" alt="calculation script">
-        <p>
-            The image above is an example of a script created to compute
-             <i>-max(a, b) + c</i> where <i>a</i> and <i>b</i> are use inputs and
-             <i>c</i> is a constant.
-        </p>
+        <div class="img_block">
+            <img src="{base}/img/projects/IDM/blueprint.png" alt="calculation script">
+            <p>
+                The image above is an example of a script created to compute
+                 <i>-max(a, b) + c</i> where a and b are use inputs and c is a constant.
+            </p>
+        </div>
         <p>This project was made with <a href="https://theobessel.fr" target="_blank">Théo Bessel</a> as part of a larger 5-person project.</p>
         <h2>Tools used</h2>
         <ul>
@@ -63,5 +66,67 @@
         align-items: center;
         min-height: 100vh;
         background-color: #fafbfe;
+        padding: 0px 25rem;
+        flex-wrap: wrap;
+    }
+
+    .back {
+        color: #020409;
+        /* text-decoration: underline; */
+        display: inline-block;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .back:hover {
+        font-weight: 600;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    ul > li {
+        margin-bottom: 0.25rem;
+    }
+
+    li > a, p > a {
+        color:blueviolet;
+        display: inline-block;
+        position: relative;
+    }
+
+    li > a::after, p > a::after, .back::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: blueviolet;
+        transform-origin: bottom right;
+        transition: all 0.25s ease-in-out;
+    }
+
+    li > a:hover::after, p > a:hover::after, .back:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+
+    .img_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_block > p {
+        margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        main {
+            padding: 0 0.5rem;
+        }
     }
 </style>
