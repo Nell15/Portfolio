@@ -137,7 +137,18 @@
         margin-top: 0.5rem;
     }
 
-    @media screen and (max-width: 800px) {
+    .img_block > img {
+            width: 100%;
+            height: auto;
+    }
+
+    @media screen and (max-width: 1300px) {
+        main {
+            padding: 0 10rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
         main {
             padding: 0 0.5rem;
         }
