@@ -5,7 +5,10 @@
 <main>
     <div>
         <!-- <p> -->
+        <div class="back_div">
             <a href="{base}/#projects" class="back">Back to projects</a>
+            <img src="{base}/img/icons/arrow-right.svg" alt="right-arrow">
+        </div>
         <!-- </p> -->
         <h1>Small Scientific Calculation Model</h1>
         <h2>Project Goal</h2>
@@ -70,9 +73,19 @@
         flex-wrap: wrap;
     }
 
+    .back_div {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+
+    .back_div > img {
+        height: 1.25em;
+        padding-left: 0.2rem;
+    }
+
     .back {
         color: #020409;
-        /* text-decoration: underline; */
         display: inline-block;
         position: relative;
         transition: all 0.25s ease-in-out;
