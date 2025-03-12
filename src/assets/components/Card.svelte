@@ -11,21 +11,18 @@
     if (link === "none") {
         target = "_self";
         link = "#projects";
-        console.log("none")
     }
     else if (link.startsWith("/projects/")) {
-        target = "_self"
-        console.log("project")
+        target = "_self";
     }
     else {
         target = "_blank"
-        console.log("new")
     }
 </script>
 
 
 <div class="card-item">
-    <a href={link} class="card-link" target={target}>
+    <a href={link.startsWith("/projects/") ? `${base}${link}` : link} class="card-link" target={target}>
         <div class="card-bg"></div>
             <span class="icon">
                 {#if icon != "none"}
