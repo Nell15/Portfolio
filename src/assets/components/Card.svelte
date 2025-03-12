@@ -29,7 +29,7 @@
         <div class="card-bg"></div>
             <span class="icon">
                 {#if icon != "none"}
-                    <img src="{base}/img/{icon}"/>
+                    <img src="{base}/img/icons/{icon}"/>
                 {:else}
                     <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
                 {/if}
