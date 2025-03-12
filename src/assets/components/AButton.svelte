@@ -26,7 +26,7 @@
         padding: 0.5em 25px;
         width: 9rem;
         height: 3em;
-        transition: all 0.5s;
+        transition: all 0.4s;
         cursor: pointer;
         position: relative;
     }
@@ -35,9 +35,9 @@
         content: '»';
         color: var(--text-color);
         position: absolute;
-        opacity: 0;  
+        opacity: 0;
         right: -1.4em;
-        transition: 0.5s;
+        transition: 0.4s;
     }
 
     button:hover{

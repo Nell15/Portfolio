@@ -99,7 +99,7 @@
             visibility: visible;
         }
     }
-    
+
     ul {
         display: flex;
         flex-direction: column;
@@ -240,7 +240,7 @@
         color: #020409;
         text-decoration: underline;
         font-weight: normal;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.25s ease-in-out;
     }
 
     footer a:hover {

@@ -192,11 +192,10 @@
     }
 
     .languages > a, .job > p > a {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .languages >  a:hover, .job > p > a:hover {
-        color: rgb(64, 1, 166);
         font-weight: bold;
     }
 
