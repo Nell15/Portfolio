@@ -11,7 +11,7 @@
         "description": "A peer-to-peer download software developped in Java using RMI and socket connections.",
         "icon": "monitor-down.svg",
         "language": "Java",
-        "link": "none"
+        "link": "/projects/hagimule"
     },
     {
         "title": "Calculation model",
