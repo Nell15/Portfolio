@@ -102,7 +102,7 @@
 
         <div class="job">
             <h2><a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a></h2>
-            <p class="job-detail">April 2024 • Volonteer</p>
+            <p class="job-detail">April 2024 and 2025 • Volonteer</p>
             <p>
                 The <a href="https://thcon.party/" target="_blank">Toulouse Hacking Convention</a>
                 is an event centered around cybersecurity. The event consist of

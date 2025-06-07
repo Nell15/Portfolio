@@ -165,6 +165,30 @@
         justify-content: space-between;
     }
 
+    p > a{
+        color:blueviolet;
+        display: inline-block;
+        position: relative;
+    }
+
+    p > a::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: blueviolet;
+        transform-origin: bottom right;
+        transition: all 0.25s ease-in-out;
+    }
+
+    p > a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+
     @media screen and (max-width: 800px) {
         .intro {
             height: 85vh;
