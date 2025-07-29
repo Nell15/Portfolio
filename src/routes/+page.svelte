@@ -14,8 +14,8 @@
         <h1 style="color: {Violet}">Nell Truong.</h1>
         <h2>I'm an engineering student.</h2>
         <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
-            and I have just finished an internship as a developer at 
-            <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">SNCF</a>.</p>
+            and I am working as software developer intern at 
+            <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>.</p>
         <AButton text={"Learn more"} link="{base}/#about" textColor={Violet} buttonColor={Violet}/>
     </div>
 </section>

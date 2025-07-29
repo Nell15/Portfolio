@@ -14,7 +14,22 @@
                     SNCF - CIE DATA (Eastern Engineering Cluster)
                 </a>
             </h2>
-            <p class="job-detail">2024 • Developer Intern</p>
+            <p class="job-detail">June-August 2025 • Software developer (Internship)</p>
+            <p>
+                I am currently working on APIs and CLIs for a cybersecurity audit device.
+            </p>
+            <div class="languages">
+                <a href="https://www.python.org/" target="_blank">Python</a>
+            </div>
+        </div>
+
+        <div class="job">
+            <h2>
+                <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">
+                    SNCF - CIE DATA (Eastern Engineering Cluster)
+                </a>
+            </h2>
+            <p class="job-detail">June-July 2024 • Software developer (Internship)</p>
             <p>
                 Developper for AR (Augmented Reality) experiences using Unreal
                 Engine 5. My job involved developping new features and testing
