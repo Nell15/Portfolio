@@ -13,8 +13,8 @@
         <h1>Hi, I'm </h1>
         <h1 style="color: {Violet}">Nell Truong.</h1>
         <h2>I'm an engineering student.</h2>
-        <p>I am a engineering student specializing in computer science at N7 (INP-ENSEEIHT) 
-            and I am working as software developer intern at 
+        <p>I am a engineering student specializing in computer science / game development at N7 (INP-ENSEEIHT) and Sherbrooke University 
+            and I have recently finished my internship as software developer intern at 
             <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>.</p>
         <AButton text={"Learn more"} link="{base}/#about" textColor={Violet} buttonColor={Violet}/>
     </div>

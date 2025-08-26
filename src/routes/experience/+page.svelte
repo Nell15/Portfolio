@@ -10,16 +10,17 @@
 
         <div class="job">
             <h2>
-                <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">
-                    SNCF - CIE DATA (Eastern Engineering Cluster)
+                <a href="https://www.oxydian.fr/" target="blank">
+                    Oxydian
                 </a>
             </h2>
             <p class="job-detail">June-August 2025 • Software developer (Internship)</p>
             <p>
-                I am currently working on APIs and CLIs for a cybersecurity audit device.
+                I am working on APIs and CLIs for a cybersecurity audit device.
             </p>
             <div class="languages">
                 <a href="https://www.python.org/" target="_blank">Python</a>
+                <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>
             </div>
         </div>
 

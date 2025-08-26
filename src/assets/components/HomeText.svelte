@@ -14,9 +14,13 @@
         after partaking in the engineering schools entrance exam earlier in May of the same year. I am currently completing 
         the first year of my Master's degree in Software engineering.
     </p>
+    <p>
+        In august 2025, I enrolled in <a href="https://www.usherbrooke.ca/" target="_blank">Sherbrooke University</a> 
+        where I am completing a Master's degree in game development as part of my leap year at N7.
+    </p>
     <p> I have recently completed my internship at 
-    <a href="https://www.sncf-voyageurs.com/fr/decouvrez-notre-entreprise/nos-directions-et-filiales/direction-du-materiel/" target="blank">SNCF (Eastern Engineering Cluster - Data)</a>
-     as a developer working on AR (Augmented Reality) experiences in Unreal Engine.
+    <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>
+     as a software developer working on proprietary software solutions.
     </p>
 </div>
 

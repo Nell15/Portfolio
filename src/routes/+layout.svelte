@@ -59,6 +59,7 @@
 <style>
     :global(html) {
         font-family:'Inter', sans-serif;
+        background-color: #fafbfe;
     }
 
     :global(a) {
