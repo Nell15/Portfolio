@@ -4,7 +4,7 @@
         "description": "Need4Fish is a 3D race against the clock game where you play as a juvenile mosasaur trying to climb the food chain.",
         "icon": "fish.svg",
         "language": "C++",
-        "link": "none"
+        "link": "/projects/need4fish"
     },
     {
         "title": "AI Bootcamp",
