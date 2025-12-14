@@ -1,13 +1,7 @@
 <div>
     <p>
-        I'm a 20 years old engineering student at N7 (ENSEEIHT)
-        specializing in Computer Science. I am interested in object-oriented programming,
-        (especially applied to game development), parallel computing and computer graphics.
-    </p>
-    <p>
-        My computer science journey started in junior high school when I started learning Scratch for game development.
-        This lead to 10th grade when I started taking engineering science classes and learned programming on Arduino boards. 
-        Over the years, I have made several projects either alone or in a team, which grew my interest for computer science even more.
+        I'm a 21 years old engineering student at N7 (ENSEEIHT)
+        specializing in software developmenta and I like building things that people will use.
     </p>
     <p>
         In september 2023, I enrolled in <a href="https://www.enseeiht.fr/en/index.html" target="_blank">N7 (ENSEEIHT)</a> 
@@ -16,7 +10,7 @@
     </p>
     <p>
         In august 2025, I enrolled in <a href="https://www.usherbrooke.ca/" target="_blank">Sherbrooke University</a> 
-        where I am completing a Master's degree in game development as part of my leap year at N7.
+        where I am completing a Master's degree in game development as part of my gap year at N7.
     </p>
     <p> I have recently completed my internship at 
     <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>

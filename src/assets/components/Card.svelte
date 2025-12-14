@@ -139,16 +139,10 @@
     background-color: #8A2BE2;
 }
 .card-item:nth-child(3n) .card-bg {
-    background-color: #2ea4ff;
+    background-color: #7e19e2;
 }
 .card-item:nth-child(4n) .card-bg {
-    background-color: #952aff;
-}
-.card-item:nth-child(5n) .card-bg {
-    background-color: #29caff;
-}
-.card-item:nth-child(6n) .card-bg {
-    background-color: #5500dd;
+    background-color: #6a29d4;
 }
 
 @media screen and (min-width: 1142px) {

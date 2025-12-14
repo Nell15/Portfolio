@@ -55,7 +55,7 @@
         </ContactButton>
         <ContactButton
         link="{base}/docs/resume_en.pdf"
-        icon="{base}/img/icons/CV_Icon.png"
+        icon="{base}/img/icons/file-user.svg"
         text="Curriculum Vitae">
         </ContactButton>
     </div>
