@@ -39,19 +39,29 @@
         static library used by our game Need4Fish.
 
         <h2>Need4Fish</h2>
-        TODO
 
-        <button on:click={prev}>
-            Previous
-        </button>
+        <h3>Rendering</h3>
+        <p>
+            To make our world and experience feel immersive, we've implemented a few rendering
+            techniques, here are a few examples:
+        </p>
 
-        <div class="img_block">
-            <img src={images[index].src} alt="{images[index].alt}">
-            <p>{images[index].alt}</p>
+        <div class="caroussel">
+            <button on:click={prev}>
+                <img src="{base}/img/icons/chevron-left.svg" alt="previous">
+            </button>
+
+            <div class="img_block">
+                <img src={images[index].src} alt="{images[index].alt}">
+                <p>{images[index].alt}</p>
+            </div>
+
+            <button on:click={next}>
+                <img src="{base}/img/icons/chevron-right.svg" alt="previous">
+            </button>
         </div>
-        <button on:click={next}>
-            Next
-        </button>
+
+        <p>This page is still a work in progress and will be updated ! :D</p>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
@@ -106,6 +116,7 @@
         background-color: #fafbfe;
         padding: 0px 25rem;
         flex-wrap: wrap;
+        margin-bottom: 7rem;
     }
 
     h1 {
@@ -138,6 +149,26 @@
     li > a:hover::after, p > a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom;
+    }
+
+    .caroussel {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .caroussel button {
+        border: none;
+        border-radius: .5rem;
+        background-color: transparent;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .caroussel img {
+        border-radius: 1rem;
     }
 
     .img_block {
