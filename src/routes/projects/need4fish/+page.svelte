@@ -1,13 +1,22 @@
 <script>
     import { base } from '$app/paths'
+    import { images } from './images';
+    import BackButton from '$assets/components/BackButton.svelte';
+
+    let index = 0;
+
+    function next() {
+        index = (index + 1) % images.length;
+    }
+
+    function prev () {
+        index = (index - 1 + images.length) % images.length;
+    }
 </script>
 
 <main>
     <div>
-        <div class="back_div">
-            <a href="{base}/#projects" class="back">Back to projects</a>
-            <img src="{base}/img/icons/arrow-right.svg" alt="right-arrow">
-        </div>
+        <BackButton></BackButton>
 
         <h1>Need4Fish</h1>
         <h2>The project</h2>
@@ -25,14 +34,26 @@
             <li>Need4Fish (the actual game)</li>
         </ul>
 
-        <h3>Fish Engine</h3>
+        <h2>Fish Engine</h2>
         Fish Engine is our homemade rendering engine. It runs on DirectX11 and is a
         static library used by our game Need4Fish.
 
-        <h3>Need4Fish</h3>
+        <h2>Need4Fish</h2>
         TODO
 
-        <h3>Credits</h3>
+        <button on:click={prev}>
+            Previous
+        </button>
+
+        <div class="img_block">
+            <img src={images[index].src} alt="{images[index].alt}">
+            <p>{images[index].alt}</p>
+        </div>
+        <button on:click={next}>
+            Next
+        </button>
+
+        <h2>Credits</h2>
         <p>This project was made in collaboration with:
             <a href="https://www.linkedin.com/in/sylvain-brunet-807b62331/">Sylvain Brunet</a>,
             <a href="https://www.linkedin.com/in/alexandre-gagnon-ultralex/">Alexandre Gagnon</a> and
@@ -62,6 +83,16 @@
                     Jolt Physics
                 </a>
             </li>
+            <li>
+                <a href="https://git-scm.com/">
+                    Git
+                </a>
+            </li>
+            <li>
+                <a href="https://visualstudio.microsoft.com/">
+                    Visual Studio
+                </a>
+            </li>
         </ul>
     </div>
 </main>
@@ -75,28 +106,6 @@
         background-color: #fafbfe;
         padding: 0px 25rem;
         flex-wrap: wrap;
-    }
-
-    .back_div {
-        display: flex;
-        align-items: center;
-        padding-top: 0.5rem;
-    }
-
-    .back_div > img {
-        height: 1.25em;
-        padding-left: 0.2rem;
-    }
-
-    .back {
-        color: #020409;
-        display: inline-block;
-        position: relative;
-        transition: all 0.25s ease-in-out;
-    }
-
-    .back:hover {
-        font-weight: 600;
     }
 
     h1 {
@@ -113,7 +122,7 @@
         position: relative;
     }
 
-    li > a::after, p > a::after, .back::after {
+    li > a::after, p > a::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -126,7 +135,7 @@
         transition: all 0.25s ease-in-out;
     }
 
-    li > a:hover::after, p > a:hover::after, .back:hover::after {
+    li > a:hover::after, p > a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom;
     }

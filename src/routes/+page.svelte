@@ -97,7 +97,7 @@
 
     @media screen and (max-height: 800px) {
         .intro div {
-            padding: 3em 3em 0px;
+            padding: 4em 9em 0px;
         }
     }
 
