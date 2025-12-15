@@ -48,6 +48,18 @@
         <h1>Volonteering</h1>
 
         <div class="job">
+            <h2><a href="https://tolosat.fr/" target="_blank">Tolosat</a></h2>
+            <p class="job-detail">2025-now • Flight software team member</p>
+            <p>
+                Tolosat is a cubesat project developed entirely by students of Toulouse's universities. 
+                I am part of the team developing the flight software for the satellite and I've worked on software timers.
+            </p>
+            <div class="languages">
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a>
+            </div>
+        </div>
+
+        <div class="job">
             <h2><a href="https://net7.dev/" target="_blank">net7</a></h2>
             <p class="job-detail">2024-2025 • Treasurer</p>
             <p>As net7's treasurer, my involves keeping track of the association's treasury, its expenses and other tasks involving funds.
@@ -85,9 +97,8 @@
             <div class="picdiv">
                 <HoverablePic
                     img_path="CdL/atem_mini.jpg"
-                    text="Picture of me using a Blackmagic Atem Extreme Iso mini control booth to reccord a conference. 
-                    This is the tool I used to familiarize myself with control booths before making my way 
-                    to heavier equipement.  "
+                    text="This is me using a Blackmagic Atem Iso mini to record a conference. 
+                    This is the first control booth I've used before making my way to heavier equipement."
                     link="https://photo7.inpt.fr/albums.php?id=62"
                 />
                 <HoverablePic
