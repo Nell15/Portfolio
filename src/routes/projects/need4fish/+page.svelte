@@ -40,6 +40,26 @@
 
         <h2>Need4Fish</h2>
 
+        <h3>Gameplay</h3>
+        <p>In Need4Fish, you eat various fishes to grow your way to being the apex predator, but you need to hurry !</p>
+        <p>Being a small creature means you're vulnerable to bigger fishes, and natural disasters (oops, spoilers!)</p>
+
+        <h4>Status effect</h4>
+        <p>Some fish give you temporary status effect, like the pufferfish that changes your vision.</p>
+
+        <h4>Ennemy AI</h4>
+        <p>In game have a very simplistic artificial intelligence, they move in a semi-random way when roaming around and start fleeing when the player gets too close.</p>
+
+        <h4>Apocalypse</h4>
+        <p>
+            To give the player a sense of urgency, if they do not finish their run in less than 3-4 minutes, the apocalyse starts.
+            It represents the extinctions of dinosaurs and forces the player to act.
+        </p>
+        <p>
+            During this event, the sun position changes, the sun's color starts fading to red, the apex mosasaur starts hunting the player and meteors start falling from the sky.
+        </p>
+
+
         <h3>Rendering</h3>
         <p>
             To make our world and experience feel immersive, we've implemented a few rendering
@@ -61,7 +81,13 @@
             </button>
         </div>
 
-        <p>This page is still a work in progress and will be updated ! :D</p>
+        <h3>Physics</h3>
+
+        <p>Our game uses Jolt Physics, we've used Jolt to handle collisions and simulate water physics.</p>
+        <p>You can interact with a few items in the scene, like rocks which sink and coconuts that float.</p>
+
+        <h3>Architecture</h3>
+        <p>Our game is built on top of a custom built ECS (Entity Component System).</p>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
@@ -179,6 +205,7 @@
 
     .img_block > p {
         margin-top: 0.5rem;
+        text-align: center;
     }
 
     .img_block > img {
