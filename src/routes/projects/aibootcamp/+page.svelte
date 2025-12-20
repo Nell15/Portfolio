@@ -2,6 +2,8 @@
     import { base } from '$app/paths'
 </script>
 
+<link rel="stylesheet" href="{base}/styles/article.css">
+
 <main>
     <div>
         <div class="back_div">
@@ -102,96 +104,3 @@
         </ul>
     </div>
 </main>
-
-<style>
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        background-color: #fafbfe;
-        padding: 0px 25rem;
-        flex-wrap: wrap;
-    }
-
-    .back_div {
-        display: flex;
-        align-items: center;
-        padding-top: 0.5rem;
-    }
-
-    .back_div > img {
-        height: 1.25em;
-        padding-left: 0.2rem;
-    }
-
-    .back {
-        color: #020409;
-        display: inline-block;
-        position: relative;
-        transition: all 0.25s ease-in-out;
-    }
-
-    .back:hover {
-        font-weight: 600;
-    }
-
-    h1 {
-        margin-top: 2rem;
-    }
-
-    ul > li {
-        margin-bottom: 0.25rem;
-    }
-
-    li > a, p > a {
-        color:blueviolet;
-        display: inline-block;
-        position: relative;
-    }
-
-    li > a::after, p > a::after, .back::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: blueviolet;
-        transform-origin: bottom right;
-        transition: all 0.25s ease-in-out;
-    }
-
-    li > a:hover::after, p > a:hover::after, .back:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom;
-    }
-
-    .img_block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img_block > p {
-        margin-top: 0.5rem;
-    }
-
-    .img_block > img {
-            width: 100%;
-            height: auto;
-    }
-
-    @media screen and (max-width: 1300px) {
-        main {
-            padding: 0 10rem;
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        main {
-            padding: 0 0.5rem;
-        }
-    }
-</style>
