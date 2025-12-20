@@ -53,17 +53,38 @@
         <p>
             TODO
         </p>
+        <span style="color:red">TODO: mettre une image !!</span>
         <h3>Seeking</h3>
         <p>
             TODO
         </p>
+        <span style="color:red">TODO: mettre une image !!</span>
         <h3>Waiting</h3>
         <p>
-            TODO
+            This state is reached when the agent arrives on his chosen goal tile.
+            In this state, the agent just waits, it has reached its goal.
         </p>
+        <span style="color:red">TODO: mettre une image !!</span>
         <h3>Search Hidden Doors</h3>
         <p>
-            TODO
+            This state is reached when all the accessible tiles have a score of 0 for an exploring
+            agent. Since it has explored all there was to explore, then surely there are some secret
+            hidden paths somewhere !
+        </p>
+        <p>
+            The agent will thus try to find doors that would have been disguised as walls.
+            There are two possible actions it can choose to do so:
+        </p>
+        <ul>
+            <li>Knock on a wall around them that hasn't been tested yet.</li>
+            <li>Move to another tile that has more untested walls.</li>
+        </ul>
+        <p>
+            With these two simple actions, we're garanteed to find a hidden door if it exists.
+        </p>
+        <p>
+            Once a door has been revealed, the agent has new tiles to explore so it can go back to the
+            exploration state.
         </p>
         <h3>Helping</h3>
         <p>
@@ -81,7 +102,7 @@
             <a href="https://www.linkedin.com/in/alexandre-gagnon-ultralex/">Alexandre Gagnon</a> and
             <a href="https://www.linkedin.com/in/landrydemersthierry/">Thierry Demers-Landry</a>
             as part of our master's degree in game development. You can try the game for free and learn more on our
-            <a href="https://github.com/SylvainBRUNET37/FishEngine">Github repository</a>.
+            <a href="https://github.com/Nell15/AI-Bootcamp">Github repository</a>.
         </p>
 
         <h2>Tools used</h2>
