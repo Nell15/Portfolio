@@ -11,7 +11,7 @@
         "description": "This is a school assignment where we built a game AI agent to solve a set of puzzle maps.",
         "icon": "chess-pawn.svg",
         "language": "C++",
-        "link": "none"
+        "link": "/projects/aibootcamp"
     },
     {
         "title": "N7WS",
