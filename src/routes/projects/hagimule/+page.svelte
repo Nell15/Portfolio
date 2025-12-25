@@ -1,13 +1,12 @@
 <script>
     import { base } from '$app/paths'
+    import BackButton from '$assets/components/BackButton.svelte';
 </script>
 
 <main>
     <div>
-        <div class="back_div">
-            <a href="{base}/#projects" class="back">Back to projects</a>
-            <img src="{base}/img/icons/arrow-right.svg" alt="right-arrow">
-        </div>
+        <BackButton></BackButton>
+
         <h1>Hagimule</h1>
         <h2>Project Goal</h2>
         <p>

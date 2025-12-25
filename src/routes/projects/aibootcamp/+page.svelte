@@ -1,15 +1,14 @@
 <script>
     import { base } from '$app/paths'
+    import BackButton from '$assets/components/BackButton.svelte';
 </script>
 
 <link rel="stylesheet" href="{base}/styles/article.css">
 
 <main>
     <div>
-        <div class="back_div">
-            <a href="{base}/#projects" class="back">Back to projects</a>
-            <img src="{base}/img/icons/arrow-right.svg" alt="right-arrow">
-        </div>
+        <BackButton></BackButton>
+
         <h1>AI Bootcamp</h1>
         <h2>Project Goal</h2>
         <p>
@@ -132,8 +131,16 @@
 
         <h2>Results</h2>
         <p>
-            TODO
+            Our solution managed to solve every level we had to test it on, which is a huge win !
         </p>
+        <p>
+            That being said, it has a few limitations, namely complicated collaboration challenges which
+            aren't supported like goal swapping.
+        </p>
+        <p>
+            Our solution is also greatly time efficient although it could be even further optimized.
+        </p>
+        <span style="color:red">TODO: mettre une image + texte !!</span>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
