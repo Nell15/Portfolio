@@ -86,13 +86,45 @@
             <li>SearchHiddenDoors</li>
             <li>Helping</li>
         </ul>
+        <p>
+            Each of these states contain the behavior and logic that makes the agent plan their next move.
+        </p>
         <span style="color:red">TODO: mettre une image !!</span>
 
         <h3>Exploring</h3>
         <p>
-            TODO
+            The <span style="font-style: italic;">Exploring</span> state is the one all agent start in.<br>
+            In this state, the agent is exploring the map in search for a path to a goal tile.
         </p>
-        <span style="color:red">TODO: mettre une image !!</span>
+        <p>
+            This is where our utility AI comes into play. The agent doesn't randomly roam around the map
+            in hopes of finding an exit: instead, it moves towards the most relevant tile around.<br>
+            To to that, the agent uses the score system to calculate a score for each of the tiles accessible
+            from its current position and moves toward the tile with the highest score.
+        </p>
+        <p>
+            Now that we have an idea of how our agent will move, we need to figure out how we're going to
+            define what's useful or not.<br>
+            This is what our team came up with:
+        </p>
+        <p>The base score for a tile is equal its number of accessible unexplored neighbors.</p>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/base_score.png" alt="Base score">
+            <p>A visual representation for the base score calculation.</p>
+        </div>
+        <p>
+            In addition to that base score, a tile might also have bonus points if it contains objects:
+        </p>
+        <ul>
+            <li>
+                Closed doors give a fix bonus.
+            </li>
+            <li>
+                Pressure plates give a bonus that is weighted by the inverse of the distance to the nearest
+                linked door, squared.
+            </li>
+        </ul>
+        <span style="color:red">TODO: mettre des images !!</span>
 
         <h3>Seeking</h3>
         <p>
@@ -155,7 +187,7 @@
             aren't supported like goal swapping.
         </p>
         <p>
-            Our solution is also greatly time efficient although it could be even further optimized.
+            Our solution is also pretty great in terms of time efficiency although it could be even further optimized.
         </p>
         <span style="color:red">TODO: mettre une image + texte + videos!!</span>
 
