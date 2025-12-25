@@ -64,7 +64,7 @@
         </div>
         <p>
             It is possible for maps to have missing tiles, blocking obstacles, or blocking agents, so it's
-            imperative to check this when trying to find a path inside our map and avoid the blocking obstacle ?
+            imperative to check this when trying to find a path inside our map and avoid the blocking obstacle.
         </p>
 
         <h2>The state machine</h2>
