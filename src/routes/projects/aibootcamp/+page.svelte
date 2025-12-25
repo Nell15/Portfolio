@@ -34,6 +34,38 @@
             all take individual decisions creating at times an emergent form of collaboration.
         </p>
         <p>So, how exactly does it work?</p>
+        <h2>Architecture</h2>
+        <p>
+            Our solution is composed of 5 main components:
+        </p>
+        <ul>
+            <li>The tile systems</li>
+            <li>The object systems</li>
+            <li>The agent systems</li>
+            <li>The score systems</li>
+            <li>The pathfinder</li>
+        </ul>
+        <h3>Systems</h3>
+        <p>
+            The first three systems (tile, object, and agent) are the containers used to store information
+            regarding the current state of the map and to perform queries on that information.<br>
+            The score system, however, does not store any data; instead, it calculates the score of a
+            given tile based on the current state of the map and the agents. This system is responsible for
+            computing what we define as utility.<br>
+        </p>
+        <h3>Pathfinder</h3>
+        <p>
+            Our pathfinder is modified version of the A* algorithm using the cubic distance formula to
+            compute distances since our maps are using hexagonal tiles.
+        </p>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/modified_A_star.png" alt="Our custom A*">
+            <p>How our custom A* works</p>
+        </div>
+        <p>
+            It is possible for maps to have missing tiles, blocking obstacles, or blocking agents, so it's
+            imperative to check this when trying to find a path inside our map and avoid the blocking obstacle ?
+        </p>
 
         <h2>The state machine</h2>
         <p>
