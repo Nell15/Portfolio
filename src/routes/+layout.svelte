@@ -39,9 +39,7 @@
     </button>
 </header>
 
-<body>
-    <slot />
-</body>
+<slot />
 
 <footer>
     <div class="license">
