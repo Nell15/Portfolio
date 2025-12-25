@@ -61,8 +61,9 @@
         </p>
         <h3>Pathfinder</h3>
         <p>
-            Our pathfinder is modified version of the A* algorithm using the cubic distance formula to
-            compute distances since our maps are using hexagonal tiles.
+            Our pathfinder is modified version of the A* algorithm using the
+            <a href="https://www.redblobgames.com/grids/hexagons/#distances" target="blank">cubic distance</a>
+            formula to compute distances since our maps are using hexagonal tiles.
         </p>
         <div class="img_block">
             <img src="{base}/img/projects/AIBootcamp/modified_A_star.png" alt="Our custom A*">
@@ -92,17 +93,32 @@
             TODO
         </p>
         <span style="color:red">TODO: mettre une image !!</span>
+
         <h3>Seeking</h3>
         <p>
-            TODO
+            This state is reached when an agent found a path from their position to their goal tile.
+            The agent will then try to follow said path.
         </p>
-        <span style="color:red">TODO: mettre une image !!</span>
+        <p>
+            When in this state, the agent chooses the next move to go to its chosen goal tile if it is not
+            blocked by a non-blocking agent. Alright but what exactly is a non-blocking agent ?<br>
+        </p>
+        <p>
+            A non-blocking agent is simply an agent that is not in the "Waiting" state, because if it is the case
+            then we are garanteed that agent that is going to move someday so our blocked agent can just wait until
+            the other one has moved to continue on their way.
+        </p>
+        <p>
+            If the agent blocking the path is a blocking agent (ie: a "Waiting" one), then our "Seeking" agent can't
+            blindly follow their path and must go back to the exploration state to find a new path.
+        </p>
+
         <h3>Waiting</h3>
         <p>
             This state is reached when the agent arrives on his chosen goal tile.
             In this state, the agent just waits, it has reached its goal.
         </p>
-        <span style="color:red">TODO: mettre une image !!</span>
+
         <h3>Search Hidden Doors</h3>
         <p>
             This state is reached when all the accessible tiles have a score of 0 for an exploring
@@ -124,6 +140,7 @@
             Once a door has been revealed, the agent has new tiles to explore so it can go back to the
             exploration state.
         </p>
+
         <h3>Helping</h3>
         <p>
             TODO
@@ -140,31 +157,31 @@
         <p>
             Our solution is also greatly time efficient although it could be even further optimized.
         </p>
-        <span style="color:red">TODO: mettre une image + texte !!</span>
+        <span style="color:red">TODO: mettre une image + texte + videos!!</span>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
-            <a href="https://www.linkedin.com/in/sylvain-brunet-807b62331/">Sylvain Brunet</a>,
-            <a href="https://www.linkedin.com/in/alexandre-gagnon-ultralex/">Alexandre Gagnon</a> and
-            <a href="https://www.linkedin.com/in/landrydemersthierry/">Thierry Demers-Landry</a>
+            <a href="https://www.linkedin.com/in/sylvain-brunet-807b62331/" target="blank">Sylvain Brunet</a>,
+            <a href="https://www.linkedin.com/in/alexandre-gagnon-ultralex/" target="blank">Alexandre Gagnon</a> and
+            <a href="https://www.linkedin.com/in/landrydemersthierry/" target="blank">Thierry Demers-Landry</a>
             as part of our master's degree in game development. You can try the game for free and learn more on our
-            <a href="https://github.com/Nell15/AI-Bootcamp">Github repository</a>.
+            <a href="https://github.com/Nell15/AI-Bootcamp" target="blank">Github repository</a>.
         </p>
 
         <h2>Tools used</h2>
         <ul>
             <li>
-                <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="blank">
                     C++
                 </a>
             </li>
             <li>
-                <a href="https://git-scm.com/">
+                <a href="https://git-scm.com/" target="blank">
                     Git
                 </a>
             </li>
             <li>
-                <a href="https://visualstudio.microsoft.com/">
+                <a href="https://visualstudio.microsoft.com/" target="blank">
                     Visual Studio
                 </a>
             </li>
