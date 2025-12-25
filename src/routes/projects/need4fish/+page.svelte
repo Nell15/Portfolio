@@ -87,7 +87,28 @@
         <p>You can interact with a few items in the scene, like rocks which sink and coconuts that float.</p>
 
         <h3>Architecture</h3>
-        <p>Our game is built on top of a custom built ECS (Entity Component System).</p>
+        <p>
+            There are a few intersting things with our architecture.
+        </p>
+        <p>
+            First of all, Fish Engine (our Rendering engine) is a static library that used by Need4Fish for its rendering needs.
+        </p>
+        <p>
+            Secondly, our game is built using a custom built ECS (Entity Component System) which makes use of a lot of templates,
+            traits and concepts, making it easy to use components and to add new ones.
+        </p>
+
+        <h2>Want to try the game ?</h2>
+        <p>
+            <a href="https://github.com/SylvainBRUNET37/FishEngine/releases/tag/v1.1.1-demo" target="_blank">
+                Need4Fish has been released on Github
+            </a>
+            , so you can download the game and try it for yourself !
+        </p>
+        <p>
+            It's as easy as downloading the .zip file, extracting it and running Need4Fish.exe.
+            We put a lot of love and effort into this game, so we would love it if your tried it out :D.
+        </p>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
