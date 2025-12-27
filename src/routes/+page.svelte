@@ -86,24 +86,27 @@
     }
 
     .intro div {
-        padding: 12em 20em 0px;
+        padding: 12em 12em 0px;
     }
 
     @media screen and (max-width: 800px){
         .intro div {
-            padding: 8em 1em 0px;
+            padding-left: 1rem;
+            padding-right: 0;
         }
     }
 
     @media screen and (max-height: 800px) {
         .intro div {
-            padding: 4em 9em 0px;
+            padding-top: 4rem;
+            /* padding: 4em 9em 0px; */
         }
     }
 
     @media screen and (max-height: 500px) {
         .intro div {
-            padding: 1em 3em 0px;
+            padding-top: 1rem;
+            /* padding: 1em 3em 0px; */
         }
     }
 
@@ -190,10 +193,6 @@
     }
 
     @media screen and (max-width: 800px) {
-        .intro {
-            height: 85vh;
-        }
-
         .abt {
             flex-direction: column-reverse;
             width: 85%;
