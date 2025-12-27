@@ -39,18 +39,12 @@
             >
         {:else}
             {#key sources[index].src}
+                <!-- svelte-ignore a11y-media-has-caption -->
                 <video controls>
                     <source
                         src="{sources[index].src}"
                         type="{getVideoType(sources[index].src)}"
                     >
-                    <track
-                        kind="captions"
-                        src="{sources[index].alt}"
-                        srclang="en"
-                        label="English"
-                        default
-                    />
                 </video>
             {/key}
         {/if}
