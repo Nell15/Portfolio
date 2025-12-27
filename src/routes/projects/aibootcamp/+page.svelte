@@ -89,7 +89,10 @@
         <p>
             Each of these states contain the behavior and logic that makes the agent plan their next move.
         </p>
-        <span style="color:red">TODO: mettre une image !!</span>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/state_machine.png" alt="The behavior state machine">
+            <p>The graph representation of our state machine.</p>
+        </div>
 
         <h3>Exploring</h3>
         <p>
@@ -124,7 +127,19 @@
                 linked door, squared.
             </li>
         </ul>
-        <span style="color:red">TODO: mettre des images !!</span>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/door_bonus.png" alt="Door bonus score.">
+            <p>A visual representation of the port giving a bonus to its tile's score.</p>
+        </div>
+        <p>
+            Finaly, the sum of the base score and bonuses is weighted by the inverse of the squared distance
+            between the tile and the exploring agent. This ensures that we're favoritizing tiles closer to the
+            agent.
+        </p>
+        <p>
+            Lastly, we decided to drop the score of explored tiles to zero to make already explored tiles
+            unappealing, which along with the distance weight makes an efficient exploration.
+        </p>
 
         <h3>Seeking</h3>
         <p>
@@ -189,7 +204,28 @@
         <p>
             Our solution is also pretty great in terms of time efficiency although it could be even further optimized.
         </p>
-        <span style="color:red">TODO: mettre une image + texte + videos!!</span>
+        <p>
+            I tried measuring the time efficiency by running five times every level and measuring the duration of each turn
+            for each agent, these are the results I got:
+        </p>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/perfs_1.png" alt="Turn duration distribution.">
+            <p>Turn duration distribution.</p>
+        </div>
+        <p>
+            Altought we got a few spikes of high duration turns, these are very inconsistant and wildly differ from
+            one execution to another, so I think they're actially irrelevant when trying to compute a mean value for
+            a turn's duration. I noticed that 97.31% of turns took less than two milliseconds, so I isolated these values:
+        </p>
+        <div class="img_block">
+            <img src="{base}/img/projects/AIBootcamp/perfs_2.png" alt="Turn duration distribution <2ms.">
+            <p>Turn duration distribution (for turns under 2ms).</p>
+        </div>
+        <p>
+            This gave me a far better distribution to work with, so I calculated a mean value of 375 microseconds,
+            which is far less than 15 milliseconds which is the shortest time limitation in all the levels we had available,
+            so I really happy with that.
+        </p>
 
         <h2>Credits</h2>
         <p>This project was made in collaboration with:
