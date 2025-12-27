@@ -2,16 +2,7 @@
     import { base } from '$app/paths'
     import { images } from './images';
     import BackButton from '$assets/components/BackButton.svelte';
-
-    let index = 0;
-
-    function next() {
-        index = (index + 1) % images.length;
-    }
-
-    function prev () {
-        index = (index - 1 + images.length) % images.length;
-    }
+    import Caroussel from '../../../assets/components/Caroussel.svelte';
 </script>
 
 <main>
@@ -66,20 +57,7 @@
             techniques, here are a few examples:
         </p>
 
-        <div class="caroussel">
-            <button on:click={prev}>
-                <img src="{base}/img/icons/chevron-left.svg" alt="previous">
-            </button>
-
-            <div class="img_block">
-                <img src={images[index].src} alt="{images[index].alt}">
-                <p>{images[index].alt}</p>
-            </div>
-
-            <button on:click={next}>
-                <img src="{base}/img/icons/chevron-right.svg" alt="previous">
-            </button>
-        </div>
+        <Caroussel sources="{images}"></Caroussel>
 
         <h3>Physics</h3>
 
@@ -196,42 +174,6 @@
     li > a:hover::after, p > a:hover::after {
         transform: scaleX(1);
         transform-origin: bottom;
-    }
-
-    .caroussel {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .caroussel button {
-        border: none;
-        border-radius: .5rem;
-        background-color: transparent;
-        height: 2rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .caroussel img {
-        border-radius: 1rem;
-    }
-
-    .img_block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img_block > p {
-        margin-top: 0.5rem;
-        text-align: center;
-    }
-
-    .img_block > img {
-            width: 100%;
-            height: auto;
     }
 
     @media screen and (max-width: 1300px) {

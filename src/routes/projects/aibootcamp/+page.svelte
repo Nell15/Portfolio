@@ -1,6 +1,8 @@
 <script>
     import { base } from '$app/paths'
+    import { videos } from './videos';
     import BackButton from '$assets/components/BackButton.svelte';
+    import Caroussel from '../../../assets/components/Caroussel.svelte';
 </script>
 
 <link rel="stylesheet" href="{base}/styles/article.css">
@@ -17,14 +19,18 @@
         </p>
         <p>
             The challenges consists of maps where several agents (the yellow pawns) must each reach one of the available exits (the green tiles)
-            in a grid of hexagonal tiles.
+            in a grid of hexagonal tiles while also avoiding forbidden tiles (the red ones) and sometimes interacting with
+            surrounding objects.
         </p>
-        <div class="img_block">
-            <img src="https://raw.githubusercontent.com/Nell15/AI-Bootcamp/main/images/L12.png" alt="Example map">
-            <p>Example: one of the levels (12)</p>
-        </div>
+
         <p>
-            You can also see on the left of the image above that there are additional requirements to solve
+            Here are a few examples of some of the toughest challenges we had:
+        </p>
+
+        <Caroussel sources={videos} areVideos></Caroussel>
+
+        <p>
+            You can also see on the left of the videos above that there are additional requirements to solve
             a level. For instance, the example above requires our agents to reach their goals in exactly 6 turns,
             and they must take less than a second to plan their next move.
         </p>
