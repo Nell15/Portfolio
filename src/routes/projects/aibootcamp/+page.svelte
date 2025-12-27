@@ -1,6 +1,7 @@
 <script>
     import { base } from '$app/paths'
     import { videos } from './videos';
+    import { helping_imgs } from './helping_imgs';
     import BackButton from '$assets/components/BackButton.svelte';
     import Caroussel from '../../../assets/components/Caroussel.svelte';
 </script>
@@ -218,27 +219,8 @@
         <p>
             This second rule might be a bit confusing so I'm going to illustrate it.
         </p>
-        <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/helping_1.png" alt="Agents needing help.">
-        </div>
-        <p>In this case, both agent are needing each other to access a goal tile.</p>
-        <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/helping_2.png" alt="Agent 1 starts helping.">
-        </div>
-        <p>
-            After some exploration, one lands on a pressure plate, so its starts helping the other.
-            Which is represented by the handshake on this picture.
-        </p>
-        <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/helping_3.png" alt="Agent 1 is done helping.">
-        </div>
-        <p>
-            Thanks to the first agent opening the door, the second agent saw a reachable goal tile in
-            front of them so it entered the <span style="font-style: italic;">Seeking</span> state and
-            started walking towards said goal.
-            After traversing the door, its path does not go through the door again, so the agent at the top
-            has no reason to continue helping the second one and can go back to its previous state.
-        </p>
+
+        <Caroussel sources={helping_imgs}></Caroussel>
 
         <h2>Results</h2>
         <p>
