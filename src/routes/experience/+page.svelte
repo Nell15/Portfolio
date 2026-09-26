@@ -1,6 +1,4 @@
 <script>
-    import { base } from '$app/paths'
-    import AButton from '../../assets/components/AButton.svelte';
     import HoverablePic from '../../assets/components/HoverablePic.svelte'
 </script>
 
@@ -10,17 +8,44 @@
 
         <div class="job">
             <h2>
+                <a href="https://www.ludia.com/" target="blank">
+                    Ludia
+                </a>
+            </h2>
+            <p class="job-detail">May-August 2026 • Tools programmer (Internship)</p>
+            <p>
+                - Maintained internal tools and added features with a user-centric approach.<br>
+                - I helped to improve the game engine's editor (C#, WPF, MVVM), particularly on edition tools,
+                navigation and asset management, where I was able to reduce the loading time of sprites from
+                minutes to seconds.<br>
+                - Fullstack development on the internal LiveOps application (Angular, Java). Added features, unit
+                tests and extended/modernized an existing REST API.<br>
+                - Partook in monthly hackathons to prototype new ideas.
+            </p>
+            <div class="languages">
+                <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank">C#</a>
+                <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/" target="_blank">WPF</a>
+                <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm" target="_blank">MVVM</a>
+                <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
+                <a href="https://angular.dev/" target="_blank">Angular</a>
+            </div>
+        </div>
+
+        <div class="job">
+            <h2>
                 <a href="https://www.oxydian.fr/" target="blank">
                     Oxydian
                 </a>
             </h2>
             <p class="job-detail">June-August 2025 • Software developer (Internship)</p>
             <p>
-                I am working on APIs and CLIs for a cybersecurity audit device.
+                - I created APIs, CLIs, and proprietary software solutions for a cybersecurity audit device.<br>
+                - Implemented automated tests in a CI/CD pipeline on Gitlab.
             </p>
             <div class="languages">
                 <a href="https://www.python.org/" target="_blank">Python</a>
                 <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>
+                <a href="https://www.docker.com/" target="_blank">Docker</a>
             </div>
         </div>
 
@@ -32,9 +57,10 @@
             </h2>
             <p class="job-detail">June-July 2024 • Software developer (Internship)</p>
             <p>
-                Developper for AR (Augmented Reality) experiences using Unreal
+                - Developper for AR (Augmented Reality) experiences using Unreal
                 Engine 5. My job involved developping new features and testing
-                them on a Microsoft Hololens 2.
+                them on a Microsoft Hololens 2.<br>
+                - I worked on hand tracking for the in-game hands (including multiplayer replication), the user interface and cutscenes.
             </p>
             <div class="languages">
                 <a href="https://www.unrealengine.com/en-US" target="_blank">Unreal Engine</a>
