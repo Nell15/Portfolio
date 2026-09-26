@@ -1,5 +1,12 @@
 [
     {
+        "title": "Mon Ami",
+        "description": "Online multiplayer horror game developed using Unreal Engine 5, running on a dedicated server.",
+        "icon": "ghost.svg",
+        "language": "Unreal Engine, C++",
+        "link": "/projects/monami"
+    },
+    {
         "title": "Need4Fish",
         "description": "Need4Fish is a 3D race against the clock game where you play as a juvenile mosasaur trying to climb the food chain.",
         "icon": "fish.svg",
@@ -53,13 +60,6 @@
         "description": "Minishell is a basic implementation of a Unix shell with command execution, redirections, etc...",
         "icon": "square-terminal.svg",
         "language": "C",
-        "link": "none"
-    },
-    {
-        "title": "PC build",
-        "description": "I built my own desktop computer and keyboard after researching and sourcing the necessary components.",
-        "icon": "PCBuild_Icon.svg",
-        "language": "Hardware",
         "link": "none"
     }
 ]
