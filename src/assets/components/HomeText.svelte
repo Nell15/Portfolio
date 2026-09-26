@@ -1,20 +1,15 @@
 <div>
     <p>
-        I'm a 21 years old engineering student at N7 (ENSEEIHT)
-        specializing in software developmenta and I like building things that people will use.
+        I'm a final-year software engineering student at <a href="https://www.enseeiht.fr/en/index.html" target="_blank">N7 (ENSEEIHT)</a>
+        specializing in software development and architecture and I enjoy building things with a meaningful impact on users.
     </p>
     <p>
-        In september 2023, I enrolled in <a href="https://www.enseeiht.fr/en/index.html" target="_blank">N7 (ENSEEIHT)</a> 
-        after partaking in the engineering schools entrance exam earlier in May of the same year. I am currently completing 
-        the first year of my Master's degree in Software engineering.
+        I also took a gap year during which I enrolled at <a href="https://www.usherbrooke.ca/" target="_blank">Sherbrooke University</a> 
+        where I completed a Master's degree in game development as part of my gap year at N7.
     </p>
-    <p>
-        In august 2025, I enrolled in <a href="https://www.usherbrooke.ca/" target="_blank">Sherbrooke University</a> 
-        where I am completing a Master's degree in game development as part of my gap year at N7.
-    </p>
-    <p> I have recently completed my internship at 
-    <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>
-     as a software developer working on proprietary software solutions.
+    <p> I have recently completed my internship at
+    <a href="https://www.ludia.com/" target="blank">Ludia</a>
+     as a tools programmer, where I did software and fullstack development.
     </p>
 </div>
 

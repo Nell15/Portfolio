@@ -13,9 +13,9 @@
         <h1>Hi, I'm </h1>
         <h1 style="color: {Violet}">Nell Truong.</h1>
         <h2>I'm an engineering student.</h2>
-        <p>I am a engineering student specializing in computer science / game development at N7 (INP-ENSEEIHT) and Sherbrooke University 
-            and I have recently finished my internship as software developer intern at 
-            <a href="https://www.oxydian.fr/" target="blank">Oxydian</a>.</p>
+        <p>I am a software engineering student, passionate about building complex systems
+            and I have recently finished my internship as tools programmer at
+            <a href="https://www.ludia.com/" target="blank">Ludia</a>.</p>
         <AButton text={"Learn more"} link="{base}/#about" textColor={Violet} buttonColor={Violet}/>
     </div>
 </section>
