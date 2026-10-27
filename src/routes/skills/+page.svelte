@@ -1,81 +1,41 @@
 <script>
     import { base } from '$app/paths'
-    import langs from '$assets/components/langs.json';
+    import lang_file from '$assets/components/langs.json';
     let path = '/langages/';
 
-    let use = "all";
+    let categories = lang_file.categories;
+    let langs = lang_file.langages;
 </script>
 
 <main>
     <h1>Skills</h1>
-    <p class="text">Here are technologies I am either familiar with or learning :</p>
+    {#each categories as category}
 
-    <div class="big-box">
-        <div class="tab-buttons">
-            <button on:click={() => {
-                use = "all"
-            }} class:open={use === "all"}>
-                All
-            </button>
-            <button on:click={() => {
-                use = "soft"
-            }} class:open={use === "soft"}>
-                Software Development
-            </button>
-            <button on:click={() => {
-                use = "web"
-            }} class:open={use === "web"}>
-                Web Development
-            </button>
-            <button on:click={() => {
-                use = "game"
-            }} class:open={use === "game"}>
-                Game Development
-            </button>
-            <button on:click={() => {
-                use = "ia"
-            }} class:open={use === "ia"}>
-                Machine Learning
-            </button>
-            <button on:click={() => {
-                use = "software"
-            }} class:open={use === "software"}>
-                Softwares
-            </button>
-        </div>
-        <div class="tab">
-            <div class='lang_container'>
-                {#each langs as l}
-                    {#if l.use.includes(use)}
-                        <div class='lang'>
-                            <a href={l.link} target="_blank">
-                                <div class='img'>
-                                    <img src="{base}{`${path}${l.file}`}" alt={l.name} class='lang_img'>
-                                </div>
-                            </a>
-                            <p style="text-align:center">{l.name}</p>
-                        </div>
-                    {/if}
-                {/each}
+    <!-- TODO: create a component for this -->
+        <div class="big-box">
+            <div class="tab-title">
+                <h2>{category}</h2>
+            </div>
+            <div class="tab">
+                <div class='lang_container'>
+                    {#each langs as l}
+                        {#if l.use.includes(category)}
+                            <div class='lang'>
+                                <a href={l.link} target="_blank">
+                                    <div class='img'>
+                                        <img src="{base}{`${path}${l.file}`}" alt={l.name} class='lang_img'>
+                                    </div>
+                                </a>
+                                <p style="text-align:center">{l.name}</p>
+                            </div>
+                        {/if}
+                    {/each}
+                </div>
             </div>
         </div>
-        <div class="phone-tab">
-            <div class='lang_container'>
-                {#each langs as l}
-                    {#if l.use.includes("all")}
-                        <div class='lang'>
-                            <a href={l.link} target="_blank">
-                                <div class='img'>
-                                    <img src="{base}{`${path}${l.file}`}" alt={l.name} class='lang_img'>
-                                </div>
-                            </a>
-                            <p style="text-align:center">{l.name}</p>
-                        </div>
-                    {/if}
-                {/each}
-            </div>
-        </div>
-    </div>
+
+    {/each}
+
 </main>
 
 <style>
@@ -86,10 +46,8 @@
         align-items: center;
         min-height: 100vh;
         background-color: #fafbfe;
-    }
-
-    .text {
-        margin-bottom: 2em;
+        gap: 2rem;
+        margin-bottom: 5rem;
     }
 
     .big-box{
@@ -99,36 +57,21 @@
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
     }
 
-    .tab-buttons {
-        display: flex;
-        justify-content: start;
-    }
-
-    .tab-buttons > button {
-        height: 3em;
-        width: auto;
-        padding: 0 2em;
-        border: none;
-        border-radius: 1.25em 1.25em 0 0;
-        background-color: #e9e9ed;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-    }
-
-    .tab-buttons button:hover {
-        background-color: #c8c8cd;
-        cursor: pointer;
-    }
-
-    .tab-buttons button.open {
-        transition: all 0.2s ease-in-out;
+    .tab-title {
         background-color: #fafbfe;
-        cursor: default;
+        display: flex;
+        width: max-content;
+        padding: 0 2rem;
+        border-radius: 1rem 1rem 0 0;
+
+        & h2 {
+            margin: 1rem 0;
+        }
     }
 
     .tab {
         background-color: #fafbfe;
-        border-radius: 0 0 2em 2em;
+        border-radius: 0 2em 2em 2em;
         display: flex;
         justify-content: center;
     }
@@ -173,23 +116,10 @@
         margin-bottom: 0;
     }
 
-    .phone-tab {
-        display: none;
-    }
-
     @media screen and (max-width: 55rem) {
-
-        .text {
-            text-align: center;
-            margin: 0 1em;
-        }
 
         .big-box {
             filter: none;
-        }
-
-        .tab-buttons {
-            display: none;
         }
 
         .tab {
@@ -204,12 +134,6 @@
 
         .lang {
             padding: 0;
-        }
-
-        .phone-tab {
-            display:flex;
-            margin-bottom: 10em;
-            align-items: center;
         }
     }
 </style>

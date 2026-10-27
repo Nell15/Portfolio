@@ -1,111 +1,91 @@
-[
-    {
-        "name":"Python",
-        "file":"Python.png",
-        "use":"all soft ia",
-        "link":"https://www.python.org/"
-    },
-    {
-        "name":"C",
-        "file":"C.png",
-        "use":"all soft",
-        "link":"https://en.wikipedia.org/wiki/C_(programming_language)"
-    },
-    {
-        "name":"Java",
-        "file":"Java.png",
-        "use":"all soft",
-        "link":"https://www.java.com/en/"
-    },
-    {
-        "name":"Ada",
-        "file":"Ada.png",
-        "use":"all",
-        "link":"https://www.adacore.com/about-ada"
-    },
-    {
-        "name":"HTML",
-        "file":"html.png",
-        "use":"all web",
-        "link":"https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-        "name":"CSS",
-        "file":"css.png",
-        "use":"all web",
-        "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-        "name":"Svelte",
-        "file":"Svelte.svg",
-        "use":"all web",
-        "link":"https://svelte.dev/"
-    },
-    {
-        "name":"Arduino",
-        "file":"Arduino.png",
-        "use":"all",
-        "link":"https://www.arduino.cc/"
-    },
-    {
-        "name":"JavaFx",
-        "file":"JavaFX.png",
-        "use":"all soft",
-        "link":"https://openjfx.io/"
-    },
-    {
-        "name":"Git",
-        "file":"Git.png",
-        "use":"all soft web",
-        "link":"https://git-scm.com/"
-    },
-    {
-        "name":"Tensorflow",
-        "file":"Tensorflow_logo.svg",
-        "use":"all ia",
-        "link":"https://www.tensorflow.org/"
-    },
-    {
-        "name":"Keras",
-        "file":"Keras_logo.svg",
-        "use":"all ia",
-        "link":"https://keras.io/"
-    },
-    {
-        "name":"Unreal Engine",
-        "file":"Unreal_Engine_Logo.svg",
-        "use":"all game software",
-        "link":"https://www.unrealengine.com/en-US"
-    },
-    {
-        "name":"C++",
-        "file":"CPP_Logo.svg",
-        "use":"all game",
-        "link":"https://en.wikipedia.org/wiki/C%2B%2B"
-    },
-    {
-        "name":"Premiere Pro",
-        "file":"Premiere_Pro.svg",
-        "use":"all software",
-        "link":"https://www.adobe.com/products/premiere.html"
-    },
-    {
-        "name":"Solidworks",
-        "file":"solidworks.png",
-        "use":"all software",
-        "link":"https://www.solidworks.com/"
-    },
-    {
-        "name":"Matlab",
-        "file":"Matlab.png",
-        "use":"all",
-        "link":"https://fr.mathworks.com/products/matlab.html"
-    },
-    {
-        "name":"Scilab",
-        "file":"scilab.png",
-        "use":"all",
-        "link":"https://www.scilab.org/"
-    }
+{
+    "categories": [
+        "Software development",
+        "Web development",
+        "Game development",
+        "Electronics and embedded",
+        "Tools",
+        "Machine learning"
+    ],
+    "langages": [
+        {
+            "name":"Git",
+            "file":"Git.png",
+            "use":["Tools"],
+            "link":"https://git-scm.com/"
+        },
+        {
+            "name":"Python",
+            "file":"Python.png",
+            "use":["Software development"],
+            "link":"https://www.python.org/"
+        },
+        {
+            "name":"C++",
+            "file":"CPP_Logo.svg",
+            "use":["Software development", "Game development"],
+            "link":"https://en.wikipedia.org/wiki/C%2B%2B"
+        },
+        {
+            "name":"C",
+            "file":"C.png",
+            "use":["Software development"],
+            "link":"https://en.wikipedia.org/wiki/C_(programming_language)"
+        },
+        {
+            "name":"Java",
+            "file":"Java.png",
+            "use":["Software development"],
+            "link":"https://www.java.com/en/"
+        },
+        {
+            "name":"HTML",
+            "file":"html.png",
+            "use":["Web development"],
+            "link":"https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+            "name":"CSS",
+            "file":"css.png",
+            "use":["Web development"],
+            "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+            "name":"Svelte",
+            "file":"Svelte.svg",
+            "use":["Web development"],
+            "link":"https://svelte.dev/"
+        },
+        {
+            "name":"Unreal Engine",
+            "file":"Unreal_Engine_Logo.svg",
+            "use":["Game development"],
+            "link":"https://www.unrealengine.com/en-US"
+        },
+        {
+            "name":"Arduino",
+            "file":"Arduino.png",
+            "use":["Electronics and embedded"],
+            "link":"https://www.arduino.cc/"
+        },
+        {
+            "name":"Matlab",
+            "file":"Matlab.png",
+            "use":["Software development"],
+            "link":"https://fr.mathworks.com/products/matlab.html"
+        },
+        {
+            "name":"Tensorflow",
+            "file":"Tensorflow_logo.svg",
+            "use":["Machine learning"],
+            "link":"https://www.tensorflow.org/"
+        },
+        {
+            "name":"Keras",
+            "file":"Keras_logo.svg",
+            "use":["Machine learning"],
+            "link":"https://keras.io/"
+        }
 
-]
+    ]
+}
