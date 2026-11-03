@@ -1,11 +1,11 @@
 {
     "categories": [
         "Software development",
-        "Web development",
         "Game development",
+        "Web development",
         "Electronics and embedded",
         "Tools",
-        "Machine learning"
+        "AI & Data"
     ],
     "langages": [
         {
@@ -27,9 +27,15 @@
             "link":"https://en.wikipedia.org/wiki/C%2B%2B"
         },
         {
+            "name":"C#",
+            "file":"C_sharp.png",
+            "use":["Software development"],
+            "link":"https://dotnet.microsoft.com/en-us/languages/csharp"
+        },
+        {
             "name":"C",
             "file":"C.png",
-            "use":["Software development"],
+            "use":["Software development", "Electronics and embedded"],
             "link":"https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         {
@@ -51,10 +57,28 @@
             "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
         },
         {
+            "name":"TypeScript",
+            "file":"typescript.svg",
+            "use":["Web development"],
+            "link":"https://www.typescriptlang.org/"
+        },
+        {
             "name":"Svelte",
             "file":"Svelte.svg",
             "use":["Web development"],
             "link":"https://svelte.dev/"
+        },
+        {
+            "name":"Angular",
+            "file":"angular.png",
+            "use":["Web development"],
+            "link":"https://angular.dev/"
+        },
+        {
+            "name":"React",
+            "file":"react.svg",
+            "use":["Web development"],
+            "link":"https://react.dev/"
         },
         {
             "name":"Unreal Engine",
@@ -69,22 +93,40 @@
             "link":"https://www.arduino.cc/"
         },
         {
-            "name":"Matlab",
-            "file":"Matlab.png",
-            "use":["Software development"],
-            "link":"https://fr.mathworks.com/products/matlab.html"
+            "name":"Linux",
+            "file":"linux.svg",
+            "use":["Tools"],
+            "link":"https://en.wikipedia.org/wiki/Linux"
+        },
+        {
+            "name":"Docker",
+            "file":"docker.svg",
+            "use":["Tools"],
+            "link":"https://www.docker.com/"
+        },
+        {
+            "name":"AWS",
+            "file":"aws.svg",
+            "use":["Tools"],
+            "link":"https://aws.amazon.com/"
         },
         {
             "name":"Tensorflow",
             "file":"Tensorflow_logo.svg",
-            "use":["Machine learning"],
+            "use":["AI & Data"],
             "link":"https://www.tensorflow.org/"
         },
         {
             "name":"Keras",
             "file":"Keras_logo.svg",
-            "use":["Machine learning"],
+            "use":["AI & Data"],
             "link":"https://keras.io/"
+        },
+        {
+            "name":"Matlab",
+            "file":"Matlab.png",
+            "use":["AI & Data"],
+            "link":"https://fr.mathworks.com/products/matlab.html"
         }
 
     ]
