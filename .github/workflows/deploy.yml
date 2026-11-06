@@ -25,7 +25,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/Portofolio'
+          BASE_PATH: ''
         run: npm run build
 
       - name: Upload Artifacts
@@ -49,4 +49,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-  
