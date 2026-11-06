@@ -1,13 +1,10 @@
 <script>
     import { base } from '$app/paths'
 
-    export let img_path;
-    export let text;
-    export let link;
+    let { img_path, text, link } = $props();
 </script>
 
 <a href="{link}" target="_blank" class='container'>
-    <!-- svelte-ignore a11y-img-redundant-alt -->
     <img
         src="{base}/img/{img_path}"
         alt="{text}"

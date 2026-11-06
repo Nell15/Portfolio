@@ -1,8 +1,7 @@
 <script>
     import { base } from '$app/paths'
 
-    export let sources;
-    export let areVideos;
+    let { sources, areVideos } = $props();
 
     const mimeTypes = {
         mp4: "video/mp4",
@@ -15,7 +14,7 @@
         return mimeTypes[ext] ?? "video/mp4"; // fallback
     };
 
-    let index = 0;
+    let index = $state(0);
 
     function next() {
         index = (index + 1) % sources.length;
@@ -27,7 +26,7 @@
 </script>
 
 <div class="caroussel">
-    <button on:click={prev}>
+    <button onclick={prev}>
         <img src="{base}/img/icons/chevron-left.svg" alt="previous">
     </button>
 
@@ -39,7 +38,7 @@
             >
         {:else}
             {#key sources[index].src}
-                <!-- svelte-ignore a11y-media-has-caption -->
+                <!-- svelte-ignore a11y_media_has_caption -->
                 <video controls>
                     <source
                         src="{sources[index].src}"
@@ -51,7 +50,7 @@
         <p>{sources[index].alt}</p>
     </div>
 
-    <button on:click={next}>
+    <button onclick={next}>
         <img src="{base}/img/icons/chevron-right.svg" alt="previous">
     </button>
 </div>

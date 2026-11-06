@@ -1,7 +1,5 @@
 <script>
-    export let icon;
-    export let text;
-    export let link;
+    let { icon, text, link } = $props();
     let textToCopy = 'nelltruong67@gmail.com';
 </script>
 

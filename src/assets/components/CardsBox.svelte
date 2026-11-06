@@ -1,6 +1,6 @@
 <script>
 	import Card from "./Card.svelte";
-	export let contentFile;
+	let { contentFile } = $props();
 </script>
 
 <div class="container">

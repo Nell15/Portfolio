@@ -24,8 +24,7 @@
     <h2>About me</h2>
     <div class="abt" >
         <HomeText/>
-        <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="{base}/img/pfp.jpg" alt="profile picture" class="pfp"/>
+        <img src="{base}/img/pfp.jpg" alt="Profile" class="pfp"/>
     </div>
 </section>
 

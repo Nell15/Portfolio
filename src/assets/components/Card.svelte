@@ -1,12 +1,15 @@
 <script lang="js">
     import { base } from '$app/paths'
 
-    export let title;
-    export let icon;
-    export let description;
-    export let language;
-    export let link;
-    let target;
+    let {
+        title,
+        icon,
+        description,
+        language,
+        link = $bindable()
+    } = $props();
+
+    let target = $state();
 
     if (link === "none") {
         target = "_self";

@@ -1,9 +1,7 @@
 <script>
     import { base } from '$app/paths'
 
-    export let filePath;
-    export let link;
-    export let name;
+    let { filePath, link, name } = $props();
 </script>
 
 <div class='lang'>

@@ -1,7 +1,8 @@
 <script>
     import { base } from '$app/paths'
     import AButton from '../assets/components/AButton.svelte';
-    let isMenuOpen = false;
+    let { children } = $props();
+    let isMenuOpen = $state(false);
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
@@ -14,32 +15,37 @@
     let current = 0;
 </script>
 
-<head>
+<svelte:head>
     <title>Nell Truong - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-</head>
+</svelte:head>
 
 <header>
     <a href="{base}/" class="logo"><h1>Nell Truong</h1></a>
-    <nav class:open={isMenuOpen}>
+    <nav class="{isMenuOpen ? 'open' : ''}">
         <ul>
-            <li on:click={closeMenu}><a class="current" href="{base}/">Home</a></li>
-            <li on:click={closeMenu}><a href="{base}/#projects">Projects</a></li>
-            <li on:click={closeMenu}><a href="{base}/skills">Skills</a></li>
-            <li on:click={closeMenu}><a href="{base}/experience">Experience</a></li>
-            <li on:click={closeMenu} class="button"><AButton text={"Contact"} link="{base}/#contact" textColor={"#020409"} buttonColor={"#edeef1"}/></li>
+            <li onclick={closeMenu}><a class="current" href="{base}/">Home</a></li>
+            <li onclick={closeMenu}><a href="{base}/#projects">Projects</a></li>
+            <li onclick={closeMenu}><a href="{base}/skills">Skills</a></li>
+            <li onclick={closeMenu}><a href="{base}/experience">Experience</a></li>
+            <li onclick={closeMenu} class="button"><AButton text={"Contact"} link="{base}/#contact" textColor={"#020409"} buttonColor={"#edeef1"}/></li>
         </ul>
     </nav>
-    <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>
+
+    <button
+        class="burger {isMenuOpen ? 'open' : ''}"
+        onclick={toggleMenu}
+        aria-label="Toggle menu"
+    >
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </button>
 </header>
 
-<slot />
+{@render children?.()}
 
 <footer>
     <div class="license">
@@ -72,6 +78,10 @@
         top: 0;
         background-color: #fafbfe;
         z-index: 3;
+
+        & a {
+                color:#020409
+            }
     }
 
     .logo {

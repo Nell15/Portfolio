@@ -1,9 +1,7 @@
 <script>
     import ClickableIcon from './ClickableIcon.svelte';
 
-    export let category;
-    export let langs;
-    export let path;
+    let { category, langs, path } = $props();
 </script>
 
 <div class="big-box">
