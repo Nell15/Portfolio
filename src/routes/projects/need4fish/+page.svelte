@@ -1,25 +1,22 @@
 <script>
-    import { base } from '$app/paths'
     import { images } from './images';
-    import BackButton from '$assets/components/BackButton.svelte';
-    import Caroussel from '../../../assets/components/Caroussel.svelte';
+    import BackButton from '#assets/components/BackButton.svelte';
+    import Caroussel from '#assets/components/Caroussel.svelte';
 </script>
 
 <main>
     <div>
-        <BackButton></BackButton>
+        <BackButton />
 
         <h1>Need4Fish</h1>
         <h2>The project</h2>
+        <p>Need4Fish is a (not so) fast paced 3D race against the clock game.</p>
+
         <p>
-            Need4Fish is a (not so) fast paced 3D race against the clock game.
+            In Need4Fish, you play as a juvenile mosasaur that was abandoned by their mother with one only goal: vengeance. To do that, you'll need to climb the food chain and become the new apex predator.
         </p>
-        <p>
-            In Need4Fish, you play as a juvenile mosasaur that was abandoned by their
-            mother with one only goal: vengeance. To do that, you'll need to climb
-            the food chain and become the new apex predator.
-        </p>
-        This projects is divided in two parts:
+
+        This projects is divided in two parts: 
         <ul>
             <li>Fish Engine (our rendering engine)</li>
             <li>Need4Fish (the actual game)</li>
@@ -57,7 +54,7 @@
             techniques, here are a few examples:
         </p>
 
-        <Caroussel sources="{images}"></Caroussel>
+        <Caroussel sources={images} />
 
         <h3>Physics</h3>
 
@@ -65,9 +62,8 @@
         <p>You can interact with a few items in the scene, like rocks which sink and coconuts that float.</p>
 
         <h3>Architecture</h3>
-        <p>
-            There are a few intersting things with our architecture.
-        </p>
+        <p>There are a few intersting things with our architecture.</p>
+
         <p>
             First of all, Fish Engine (our Rendering engine) is a static library that used by Need4Fish for its rendering needs.
         </p>

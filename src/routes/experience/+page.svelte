@@ -1,5 +1,5 @@
 <script>
-    import HoverablePic from '../../assets/components/HoverablePic.svelte'
+    import HoverablePic from '#assets/components/HoverablePic.svelte'
 </script>
 
 <main>

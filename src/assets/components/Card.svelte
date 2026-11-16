@@ -1,5 +1,5 @@
 <script lang="js">
-    import { base } from '$app/paths'
+  import { resolve } from '$app/paths';
 
     let {
         title,
@@ -9,53 +9,56 @@
         link = $bindable()
     } = $props();
 
-    let target = $state();
+  let target = $state();
 
-    if (link === "none") {
-        target = "_self";
-        link = "#projects";
+  if (link === "none") {
+    target = "_self";
+    link = "#projects";
     }
     else if (link.startsWith("/projects/")) {
-        target = "_self";
-    }
-    else {
-        target = "_blank"
-    }
+    target = "_self";
+  } else {
+    target = "_blank";
+  }
 </script>
 
 
 <div class="card-item">
-    <a href={link.startsWith("/projects/") ? `${base}${link}` : link} class="card-link" target={target}>
-        <div class="card-bg"></div>
-            <span class="icon">
-                {#if icon != "none"}
-                    <img src="{base}/img/icons/{icon}"/>
-                {:else}
-                    <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
-                {/if}
-                </span>
+  <a
+    href={link.startsWith("/projects/") ? resolve(`${link}`.slice(1)) : link}
+    class="card-link"
+    target={target}
+  >
+    <div class="card-bg"></div>
+    <span class="icon">
+      {#if icon != "none"}
+        <img src={resolve(`/img/icons/${icon}`)} alt="icon"/>
+      {:else}
+        <img src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"/>
+      {/if}
+    </span>
 
         <div class="card-title">
             {title}
         </div>
 
-        <div class="card-details">
-            <span class="card-description">
-                {#if description != "none"}
-                    {description}
-                {/if}
-            </span>
-            {#if language != "none"}
-                <span class="lang">{language}</span>
-            {/if}
-        </div>
-    </a>
+    <div class="card-details">
+      <span class="card-description">
+        {#if description != "none"}
+          {description}
+        {/if}
+      </span>
+      {#if language != "none"}
+        <span class="lang">{language}</span>
+      {/if}
+    </div>
+  </a>
 </div>
 
 
 <style>
 
-.card-item {
+  .card-item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
     margin: 0 15px 30px;
@@ -84,8 +87,8 @@
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
     transform: scale(10);
-}
-.card-title {
+  }
+  .card-title {
     margin: 0.2em 0 0.5em;
 
     overflow: hidden;
@@ -158,11 +161,11 @@
     }
 }
 
-@media only screen and (max-width: 979px) {
-  .card-title {
-    font-size: 24px;
+  @media only screen and (max-width: 979px) {
+    .card-title {
+      font-size: 24px;
+    }
   }
-}
 
 @media only screen and (max-width: 639px) {
     .card-item {

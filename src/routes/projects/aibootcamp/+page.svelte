@@ -1,34 +1,33 @@
 <script>
-    import { base } from '$app/paths'
+    import { resolve } from '$app/paths';
     import { videos } from './videos';
     import { helping_imgs } from './helping_imgs';
-    import BackButton from '$assets/components/BackButton.svelte';
-    import Caroussel from '../../../assets/components/Caroussel.svelte';
+    import BackButton from '#assets/components/BackButton.svelte';
+    import Caroussel from '#assets/components/Caroussel.svelte';
 </script>
 
-<link rel="stylesheet" href="{base}/styles/article.css">
+<link
+    rel="stylesheet"
+    href={resolve('/styles/article.css')}
+/>
 
 <main>
     <div>
-        <BackButton></BackButton>
+        <BackButton />
 
         <h1>AI Bootcamp</h1>
         <h2>Project Goal</h2>
         <p>
-            This project is our project for our applied game AI course at the University of Sherbrooke.
-            In this project, our professor provided us with a set of challenges which we had to solve with a our own AI agent.<br>
-        </p>
-        <p>
-            The challenges consists of maps where several agents (the yellow pawns) must each reach one of the available exits (the green tiles)
-            in a grid of hexagonal tiles while also avoiding forbidden tiles (the red ones) and sometimes interacting with
-            surrounding objects.
+            This project is our project for our applied game AI course at the University of Sherbrooke. In this project, our professor provided us with a set of challenges which we had to solve with a our own AI agent.
+            <br />
         </p>
 
         <p>
-            Here are a few examples of some of the toughest challenges we had:
+            The challenges consists of maps where several agents (the yellow pawns) must each reach one of the available exits (the green tiles) in a grid of hexagonal tiles while also avoiding forbidden tiles (the red ones) and sometimes interacting with surrounding objects.
         </p>
 
-        <Caroussel sources={videos} areVideos></Caroussel>
+        <p>Here are a few examples of some of the toughest challenges we had:</p>
+        <Caroussel sources={videos} areVideos />
 
         <p>
             You can also see on the left of the videos above that there are additional requirements to solve
@@ -60,11 +59,10 @@
         </ul>
         <h3>Systems</h3>
         <p>
-            The first three systems (tile, object, and agent) are the containers used to store information
-            regarding the current state of the map and to perform queries on that information.<br>
-            The score system, however, does not store any data; instead, it calculates the score of a
-            given tile based on the current state of the map and the agents. This system is responsible for
-            computing what we define as utility.<br>
+            The first three systems (tile, object, and agent) are the containers used to store information regarding the current state of the map and to perform queries on that information.
+            <br />
+            The score system, however, does not store any data; instead, it calculates the score of a given tile based on the current state of the map and the agents. This system is responsible for computing what we define as utility.
+            <br />
         </p>
         <h3>Pathfinder</h3>
         <p>
@@ -73,7 +71,11 @@
             formula to compute distances since our maps are using hexagonal tiles.
         </p>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/modified_A_star.png" alt="Our custom A*">
+            <img
+                src={resolve('/img/projects/AIBootcamp/modified_A_star.png')}
+                alt="Our custom A*"
+            />
+
             <p>How our custom A* works</p>
         </div>
         <p>
@@ -83,7 +85,8 @@
 
         <h2>The state machine</h2>
         <p>
-            Each of our agents works as a state machine with each state serving a specific purpose.<br>
+            Each of our agents works as a state machine with each state serving a specific purpose.
+            <br />
             There is a total of 5 states which are:
         </p>
         <ul>
@@ -97,45 +100,57 @@
             Each of these states contain the behavior and logic that makes the agent plan their next move.
         </p>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/state_machine.png" alt="The behavior state machine">
+            <img
+                src={resolve('/img/projects/AIBootcamp/state_machine.png')}
+                alt="The behavior state machine"
+            />
+
             <p>The graph representation of our state machine.</p>
         </div>
 
         <h3>Exploring</h3>
         <p>
-            The <span style="font-style: italic;">Exploring</span> state is the one all agent start in.<br>
+            The 
+            <span style="font-style: italic;">Exploring</span>
+            state is the one all agent start in.
+            <br />
             In this state, the agent is exploring the map in search for a path to a goal tile.
         </p>
         <p>
-            This is where our utility AI comes into play. The agent doesn't randomly roam around the map
-            in hopes of finding an exit: instead, it moves towards the most relevant tile around.<br>
-            To to that, the agent uses the score system to calculate a score for each of the tiles accessible
-            from its current position and moves toward the tile with the highest score.
+            This is where our utility AI comes into play. The agent doesn't randomly roam around the map in hopes of finding an exit: instead, it moves towards the most relevant tile around.
+            <br />
+            To to that, the agent uses the score system to calculate a score for each of the tiles accessible from its current position and moves toward the tile with the highest score.
         </p>
         <p>
-            Now that we have an idea of how our agent will move, we need to figure out how we're going to
-            define what's useful or not.<br>
+            Now that we have an idea of how our agent will move, we need to figure out how we're going to define what's useful or not.
+            <br />
             This is what our team came up with:
         </p>
         <p>The base score for a tile is equal its number of accessible unexplored neighbors.</p>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/base_score.png" alt="Base score">
+            <img
+                src={resolve('/img/projects/AIBootcamp/base_score.png')}
+                alt="Base score"
+            />
+
             <p>A visual representation for the base score calculation.</p>
         </div>
         <p>
             In addition to that base score, a tile might also have bonus points if it contains objects:
         </p>
         <ul>
+            <li>Closed doors give a fix bonus.</li>
+
             <li>
-                Closed doors give a fix bonus.
-            </li>
-            <li>
-                Pressure plates give a bonus that is weighted by the inverse of the distance to the nearest
-                linked door, squared.
+                Pressure plates give a bonus that is weighted by the inverse of the distance to the nearest linked door, squared.
             </li>
         </ul>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/door_bonus.png" alt="Door bonus score.">
+            <img
+                src={resolve('/img/projects/AIBootcamp/door_bonus.png')}
+                alt="Door bonus score."
+            />
+
             <p>A visual representation of the port giving a bonus to its tile's score.</p>
         </div>
         <p>
@@ -154,8 +169,8 @@
             The agent will then try to follow said path.
         </p>
         <p>
-            When in this state, the agent chooses the next move to go to its chosen goal tile if it is not
-            blocked by a non-blocking agent. Alright but what exactly is a non-blocking agent ?<br>
+            When in this state, the agent chooses the next move to go to its chosen goal tile if it is not blocked by a non-blocking agent. Alright but what exactly is a non-blocking agent ?
+            <br />
         </p>
         <p>
             A non-blocking agent is simply an agent that is not in the "Waiting" state, because if it is the case
@@ -187,12 +202,11 @@
             <li>Knock on a wall around them that hasn't been tested yet.</li>
             <li>Move to another tile that has more untested walls.</li>
         </ul>
+
+        <p>With these two simple actions, we're garanteed to find a hidden door if it exists.</p>
+
         <p>
-            With these two simple actions, we're garanteed to find a hidden door if it exists.
-        </p>
-        <p>
-            Once a door has been revealed, the agent has new tiles to explore so it can go back to the
-            exploration state.
+            Once a door has been revealed, the agent has new tiles to explore so it can go back to the exploration state.
         </p>
 
         <h3>Helping</h3>
@@ -210,25 +224,26 @@
             other agent is either:
         </p>
         <ul>
-            <li>In the <span style="font-style: italic;">Waiting</span> state</li>
             <li>
-                or in the <span style="font-style: italic;">Seeking</span> and its remaining path does not
-                go through the door that is opened by the helping agent.
+                In the 
+                <span style="font-style: italic;">Waiting</span>
+                state
+            </li>
+
+            <li>
+                or in the 
+                <span style="font-style: italic;">Seeking</span>
+                and its remaining path does not go through the door that is opened by the helping agent.
             </li>
         </ul>
-        <p>
-            This second rule might be a bit confusing so I'm going to illustrate it.
-        </p>
 
-        <Caroussel sources={helping_imgs}></Caroussel>
-
+        <p>This second rule might be a bit confusing so I'm going to illustrate it.</p>
+        <Caroussel sources={helping_imgs} />
         <h2>Results</h2>
+        <p>Our solution managed to solve every level we had to test it on, which is a huge win !</p>
+
         <p>
-            Our solution managed to solve every level we had to test it on, which is a huge win !
-        </p>
-        <p>
-            That being said, it has a few limitations, namely complicated collaboration challenges which
-            aren't supported like goal swapping.
+            That being said, it has a few limitations, namely complicated collaboration challenges which aren't supported like goal swapping.
         </p>
         <p>
             Our solution is also pretty great in terms of time efficiency although it could be even further optimized.
@@ -238,7 +253,11 @@
             for each agent, these are the results I got:
         </p>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/perfs_1.png" alt="Turn duration distribution.">
+            <img
+                src={resolve('/img/projects/AIBootcamp/perfs_1.png')}
+                alt="Turn duration distribution."
+            />
+
             <p>Turn duration distribution.</p>
         </div>
         <p>
@@ -247,7 +266,11 @@
             a turn's duration. I noticed that 97.31% of turns took less than two milliseconds, so I isolated these values:
         </p>
         <div class="img_block">
-            <img src="{base}/img/projects/AIBootcamp/perfs_2.png" alt="Turn duration distribution <2ms.">
+            <img
+                src={resolve('/img/projects/AIBootcamp/perfs_2.png')}
+                alt="Turn duration distribution <2ms."
+            />
+
             <p>Turn duration distribution (for turns under 2ms).</p>
         </div>
         <p>
@@ -272,15 +295,14 @@
                     C++
                 </a>
             </li>
+
+            <li><a href="https://git-scm.com/" target="blank">Git</a></li>
+
             <li>
-                <a href="https://git-scm.com/" target="blank">
-                    Git
-                </a>
-            </li>
-            <li>
-                <a href="https://visualstudio.microsoft.com/" target="blank">
-                    Visual Studio
-                </a>
+                <a
+                    href="https://visualstudio.microsoft.com/"
+                    target="blank"
+                >Visual Studio</a>
             </li>
         </ul>
     </div>

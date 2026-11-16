@@ -1,11 +1,11 @@
 <script>
-    import { base } from '$app/paths'
-    import BackButton from '$assets/components/BackButton.svelte';
+    import { resolve } from '$app/paths';
+    import BackButton from '#assets/components/BackButton.svelte';
 </script>
 
 <main>
     <div>
-        <BackButton></BackButton>
+        <BackButton />
 
         <h1>Small Scientific Calculation Model</h1>
         <h2>Project Goal</h2>
@@ -21,7 +21,11 @@
              graphical tool and convert them to executable Python scripts.
         </p>
         <div class="img_block">
-            <img src="{base}/img/projects/IDM/blueprint.png" alt="calculation script">
+            <img
+                src={resolve('/img/projects/IDM/blueprint.png')}
+                alt="calculation script"
+            />
+
             <p>
                 The image above is an example of a script created to compute
                  <i>-max(a, b) + c</i> where a and b are use inputs and c is a constant.
@@ -35,26 +39,17 @@
                 Eclipse Modelling Framework (EMF)
                 </a>
             </li>
+
+            <li><a href="https://gradle.org/">Gradle</a></li>
+            <li><a href="https://www.java.com/en/">Java</a></li>
+
             <li>
-                <a href="https://gradle.org/">
-                    Gradle
-                </a>
+                <a
+                    href="https://www.obeosoft.com/en/products/eclipse-sirius"
+                >Sirius</a>
             </li>
-            <li>
-                <a href="https://www.java.com/en/">
-                    Java
-                </a>
-            </li>
-            <li>
-                <a href="https://www.obeosoft.com/en/products/eclipse-sirius">
-                    Sirius
-                </a>
-            </li>
-            <li>
-                <a href="https://www.python.org/">
-                    Python
-                </a>
-            </li>
+
+            <li><a href="https://www.python.org/">Python</a></li>
         </ul>
     </div>
 </main>

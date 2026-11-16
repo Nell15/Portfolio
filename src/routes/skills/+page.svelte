@@ -1,6 +1,6 @@
 <script>
-    import lang_file from '$assets/components/langs.json';
-    import SkillsTab from '../../assets/components/skills/SkillsTab.svelte';
+    import lang_file from '#assets/components/langs.json';
+    import SkillsTab from '#assets/components/skills/SkillsTab.svelte';
 
     let categories = lang_file.categories;
     let langs = lang_file.langages;

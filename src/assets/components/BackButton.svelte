@@ -1,10 +1,14 @@
 <script>
-    import { base } from '$app/paths'
+    import { resolve } from '$app/paths';
 </script>
 
 <div class="back_div">
-    <a href="{base}/#projects" class="back">Back to projects</a>
-    <img src="{base}/img/icons/arrow-right.svg" alt="right-arrow">
+    <a href={resolve('/#projects')} class="back">Back to projects</a>
+
+    <img
+        src={resolve('/img/icons/arrow-right.svg')}
+        alt="right-arrow"
+    />
 </div>
 
 <style>

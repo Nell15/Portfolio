@@ -1,11 +1,10 @@
 <script>
-    import { base } from '$app/paths'
-    import BackButton from '$assets/components/BackButton.svelte';
+    import BackButton from '#assets/components/BackButton.svelte';
 </script>
 
 <main>
     <div>
-        <BackButton></BackButton>
+        <BackButton />
 
         <h1>Mon ami</h1>
         <h2>An online multiplayer horror game built on Unreal Engine 5</h2>
@@ -15,32 +14,19 @@
 
         <h2>Tools used</h2>
         <ul>
+            <li><a href="https://www.unrealengine.com/">Unreal Engine</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+
             <li>
-                <a href="https://www.unrealengine.com/">
-                    Unreal Engine
-                </a>
+                <a
+                    href="https://dotnet.microsoft.com/en-us/languages/csharp"
+                >C#</a>
             </li>
-            <li>
-                <a href="https://en.wikipedia.org/wiki/C%2B%2B">
-                    C++
-                </a>
-            </li>
-            <li>
-                <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
-                    C#
-                </a>
-            </li>
-            <li>
-                <a href="https://www.docker.com/">
-                    Docker
-                </a>
-            </li>
-            <li>
-                <a href="https://aws.amazon.com/">
-                    AWS
-                </a>
-            </li>
+
+            <li><a href="https://www.docker.com/">Docker</a></li>
+            <li><a href="https://aws.amazon.com/">AWS</a></li>
         </ul>
+    </div>
 </main>
 
 <style>

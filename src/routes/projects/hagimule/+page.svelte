@@ -1,11 +1,10 @@
 <script>
-    import { base } from '$app/paths'
-    import BackButton from '$assets/components/BackButton.svelte';
+    import BackButton from '#assets/components/BackButton.svelte';
 </script>
 
 <main>
     <div>
-        <BackButton></BackButton>
+        <BackButton />
 
         <h1>Hagimule</h1>
         <h2>Project Goal</h2>

@@ -1,13 +1,13 @@
 <script>
-    import { base } from '$app/paths'
+    import { resolve } from '$app/paths';
 
     let { img_path, text, link } = $props();
 </script>
 
-<a href="{link}" target="_blank" class='container'>
+<a href={link} target="_blank" class="container">
     <img
-        src="{base}/img/{img_path}"
-        alt="{text}"
+        src={resolve(`/img/${img_path}`)}
+        alt={text}
         class="pic"
     />
     <div class="text_holder">
@@ -36,7 +36,7 @@
         position: absolute;
         z-index: 2;
         color: white;
-        opacity: 0;        
+        opacity: 0;
         width: 100%;
         height: 100%;
         border-radius: 1rem;
@@ -55,7 +55,7 @@
     }
 
     @media screen and (max-width: 800px) {
-        
+
         .container {
             width: 95%;
         }

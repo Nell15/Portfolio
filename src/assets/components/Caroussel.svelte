@@ -1,5 +1,5 @@
 <script>
-    import { base } from '$app/paths'
+    import { resolve } from '$app/paths';
 
     let { sources, areVideos } = $props();
 
@@ -27,23 +27,23 @@
 
 <div class="caroussel">
     <button onclick={prev}>
-        <img src="{base}/img/icons/chevron-left.svg" alt="previous">
+        <img
+            src={resolve('/img/icons/chevron-left.svg')}
+            alt="previous"
+        />
     </button>
 
     <div class="img_block">
         {#if !areVideos}
-            <img
-                src={sources[index].src}
-                alt="{sources[index].alt}"
-            >
+            <img src={sources[index].src} alt={sources[index].alt} />
         {:else}
             {#key sources[index].src}
                 <!-- svelte-ignore a11y_media_has_caption -->
                 <video controls>
                     <source
-                        src="{sources[index].src}"
-                        type="{getVideoType(sources[index].src)}"
-                    >
+                        src={sources[index].src}
+                        type={getVideoType(sources[index].src)}
+                    />
                 </video>
             {/key}
         {/if}
@@ -51,7 +51,10 @@
     </div>
 
     <button onclick={next}>
-        <img src="{base}/img/icons/chevron-right.svg" alt="previous">
+        <img
+            src={resolve('/img/icons/chevron-right.svg')}
+            alt="next"
+        />
     </button>
 </div>
 

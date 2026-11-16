@@ -1,11 +1,11 @@
 <script>
-    import { base } from '$app/paths'
-    import HomeText from '$assets/components/HomeText.svelte'
-    import AButton from '../assets/components/AButton.svelte';
+    import { resolve } from '$app/paths';
+    import HomeText from '#assets/components/HomeText.svelte';
+    import AButton from '#assets/components/AButton.svelte';
     let Violet = "blueviolet";
-    import Cards from '../assets/components/CardsBox.svelte';
-    import projectsDesc from '../assets/components/projectCards.json'
-    import ContactButton from '../assets/components/ContactButton.svelte';
+    import Cards from '#assets/components/CardsBox.svelte';
+    import projectsDesc from '#assets/components/projectCards.json'
+    import ContactButton from '#assets/components/ContactButton.svelte';
 </script>
 
 <section class="intro">
@@ -13,24 +13,39 @@
         <h1>Hi, I'm </h1>
         <h1 style="color: {Violet}">Nell Truong.</h1>
         <h2>I'm an engineering student.</h2>
-        <p>I am a software engineering student, passionate about building complex systems
-            and I have recently finished my internship as tools programmer at
-            <a href="https://www.ludia.com/" target="blank">Ludia</a>.</p>
-        <AButton text={"Learn more"} link="{base}/#about" textColor={Violet} buttonColor={Violet}/>
+
+        <p>
+            I am a software engineering student, passionate about building complex systems and I have recently finished my internship as tools programmer at 
+            <a href="https://www.ludia.com/" target="blank">Ludia</a>
+            .
+        </p>
+
+        <AButton
+            text={"Learn more"}
+            link={resolve('/#about')}
+            textColor={Violet}
+            buttonColor={Violet}
+        />
     </div>
 </section>
 
 <section class="abt_section" id="about">
     <h2>About me</h2>
-    <div class="abt" >
-        <HomeText/>
-        <img src="{base}/img/pfp.jpg" alt="Profile" class="pfp"/>
+
+    <div class="abt">
+        <HomeText />
+
+        <img
+            src={resolve('/img/pfp.jpg')}
+            alt="Profile"
+            class="pfp"
+        />
     </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-    <Cards contentFile={projectsDesc}></Cards>
+    <Cards contentFile={projectsDesc} />
 </section>
 
 <section id="contact">
@@ -53,10 +68,10 @@
         text="nelltruong67@gmail.com">
         </ContactButton>
         <ContactButton
-        link="{base}/docs/resume_en.pdf"
-        icon="{base}/img/icons/file-user.svg"
-        text="Curriculum Vitae">
-        </ContactButton>
+            link={resolve('/docs/resume_en.pdf')}
+            icon={resolve('/img/icons/file-user.svg')}
+            text="Curriculum Vitae"
+        ></ContactButton>
     </div>
 </section>
 

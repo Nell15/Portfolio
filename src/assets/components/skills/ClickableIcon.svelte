@@ -1,13 +1,17 @@
 <script>
-    import { base } from '$app/paths'
+    import { resolve } from '$app/paths';
 
     let { filePath, link, name } = $props();
 </script>
 
-<div class='lang'>
+<div class="lang">
     <a href={link} target="_blank">
-        <div class='img'>
-            <img src="{base}{filePath}" alt={name} class='lang_img'>
+        <div class="img">
+            <img
+                src={resolve(filePath)}
+                alt={name}
+                class="lang_img"
+            />
         </div>
     </a>
     <p style="text-align:center">{name}</p>

@@ -1,4 +1,4 @@
-import { base } from '$app/paths'
+import { resolve } from '$app/paths';
 
 export const images = [
   {
@@ -26,7 +26,7 @@ export const images = [
     alt: 'We used shadow maps for light occlusion and shadows.'
   },
   {
-    src: `${base}/img/projects/Need4Fish/vignette.png`,
+    src: resolve(`img/projects/Need4Fish/vignette.png`),
     alt: 'A red vignette appears when approching a bigger fish.'
   }
   ,
